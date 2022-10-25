@@ -1,0 +1,19 @@
+{
+  "name": "spec-reactions",
+  "description": "Counting GitHub reactions for web specifications",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/foolip/spec-reactions.git"
+  },
+  "type": "module",
+  "scripts": {
+    "main": "node index.js"
+  },
+  "dependencies": {
+    "@octokit/plugin-throttling": "4.3.1",
+    "@octokit/rest": "19.0.5",
+    "browser-specs": "3.30.0"
+  }
+}
