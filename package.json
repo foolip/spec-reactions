@@ -9,11 +9,13 @@
   },
   "type": "module",
   "scripts": {
-    "main": "node index.js"
+    "build": "node index.js"
   },
   "dependencies": {
     "@octokit/plugin-throttling": "4.3.1",
     "@octokit/rest": "19.0.5",
-    "browser-specs": "3.30.0"
+    "browser-specs": "3.30.0",
+    "handlebars": "4.7.7",
+    "list.js": "2.3.1"
   }
 }
