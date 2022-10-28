@@ -25,9 +25,9 @@ const template = Handlebars.compile(`<!DOCTYPE html>
 <meta charset="utf-8">
 <title>🚀 spec reactions</title>
 <style>
-  :root {
-    font-family: sans-serif;
-  }
+  @import "https://unpkg.com/open-props";
+  @import "https://unpkg.com/open-props/normalize.min.css";
+    
   td.total, td.recent {
     text-align: right;
   }
