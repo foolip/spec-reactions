@@ -43,13 +43,13 @@
   },
   {
     "total_count": 12,
-    "recent_count": 2,
+    "recent_count": 0,
     "url": "https://github.com/WICG/urlpattern/issues/73",
     "title": "consider generating URL strings from a URLPattern"
   },
   {
     "total_count": 84,
-    "recent_count": 4,
+    "recent_count": 3,
     "url": "https://github.com/WICG/webpackage/issues/551",
     "title": "Correct / real URLs should be enforced, to avoid breaking adblockers"
   },
@@ -403,7 +403,7 @@
   },
   {
     "total_count": 83,
-    "recent_count": 83,
+    "recent_count": 81,
     "url": "https://github.com/w3c/csswg-drafts/issues/7544",
     "title": "[selectors] Proposal for a :hover-only pseudo class"
   },
@@ -606,8 +606,8 @@
     "title": "[css-inline] vertically align to middle of cap height"
   },
   {
-    "total_count": 60,
-    "recent_count": 1,
+    "total_count": 62,
+    "recent_count": 3,
     "url": "https://github.com/w3c/csswg-drafts/issues/4559",
     "title": "[css-values] Proposal: add sibling-count() and sibling-index()"
   },
@@ -660,8 +660,8 @@
     "title": "[css-animation] Motion Blur"
   },
   {
-    "total_count": 163,
-    "recent_count": 15,
+    "total_count": 164,
+    "recent_count": 16,
     "url": "https://github.com/w3c/csswg-drafts/issues/3744",
     "title": "[cssom-view-1] Provide onAnimationEnd callback in scrollIntoView options"
   },
@@ -1212,8 +1212,8 @@
     "title": "Selected ECC curves are not secure"
   },
   {
-    "total_count": 90,
-    "recent_count": 3,
+    "total_count": 91,
+    "recent_count": 4,
     "url": "https://github.com/w3c/webcrypto/issues/73",
     "title": "Bug 27755 - Using the Subtle Crypto Interface with Streams"
   },
@@ -1354,6 +1354,12 @@
     "recent_count": 2,
     "url": "https://github.com/whatwg/fetch/issues/1254",
     "title": "Fetch body streams are not full duplex"
+  },
+  {
+    "total_count": 10,
+    "recent_count": 7,
+    "url": "https://github.com/whatwg/fetch/issues/981",
+    "title": "Trailer support in the API"
   },
   {
     "total_count": 19,
@@ -1512,8 +1518,8 @@
     "title": "Programmatically setting focus navigation start point?"
   },
   {
-    "total_count": 138,
-    "recent_count": 5,
+    "total_count": 139,
+    "recent_count": 6,
     "url": "https://github.com/whatwg/html/issues/5312",
     "title": "Form Submission: Fix the \"Double Submit problem\" at the spec level"
   },
@@ -1657,7 +1663,7 @@
   },
   {
     "total_count": 28,
-    "recent_count": 3,
+    "recent_count": 2,
     "url": "https://github.com/whatwg/html/issues/3400",
     "title": "Allow <input type=\"color\"> to give an alpha channel and/or colors beyond sRGB?"
   },
@@ -1848,8 +1854,8 @@
     "title": "URLSearchParams delete all vs delete one"
   },
   {
-    "total_count": 142,
-    "recent_count": 15,
+    "total_count": 143,
+    "recent_count": 16,
     "url": "https://github.com/whatwg/websockets/issues/16",
     "title": "Support for custom headers for handshake "
   }
