@@ -1,0 +1,6 @@
+@import "open-props/style";
+@import "open-props/normalize";
+
+td.total, td.recent {
+  text-align: right;
+}
