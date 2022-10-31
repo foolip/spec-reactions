@@ -9,13 +9,16 @@
   },
   "type": "module",
   "scripts": {
-    "build": "node index.js"
+    "build": "node build.js && vite build"
   },
   "dependencies": {
     "@octokit/plugin-throttling": "4.3.1",
     "@octokit/rest": "19.0.5",
     "browser-specs": "3.30.0",
     "handlebars": "4.7.7",
-    "list.js": "2.3.1"
+    "list.js": "2.3.1",
+    "open-props": "1.4.20",
+    "vite": "3.2.2",
+    "vite-plugin-handlebars": "1.6.0"
   }
 }
