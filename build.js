@@ -111,7 +111,7 @@ async function main() {
 
   // Write JSON output.
   const json = JSON.stringify(issues, null, '  ') + '\n';
-  await fs.writeFile('dist/issues.json', json);
+  await fs.writeFile('issues.json', json);
 }
 
 await main();
