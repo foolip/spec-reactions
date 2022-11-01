@@ -1,23 +1,11 @@
 <!DOCTYPE html>
+<script type="module" crossorigin src="/assets/index.4ab89f2a.js"></script>
+<link rel="stylesheet" href="/assets/index.f64b3b4d.css">
+
 <meta charset="utf-8">
 <title>🚀 spec reactions</title>
-<style>
-  :root {
-    font-family: sans-serif;
-  }
-  td.total, td.recent {
-    text-align: right;
-  }
-</style>
-<script src="list.min.js" defer></script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const list = new List('reactions', {
-    valueNames: [ 'total', 'recent', 'title' ]
-  });
-  list.sort('total', { order: 'desc' });
-});
-</script>
+
+
 <div id="reactions">
   <input class="search" placeholder="Filter">
   <button class="sort" data-sort="total">Sort by total</button>
@@ -31,1556 +19,1561 @@ document.addEventListener('DOMContentLoaded', () => {
       </tr>
     </thead>
     <tbody class="list">
-      <tr>
-        <td class="total">24</td>
-        <td class="recent">10</td>
-        <td class="title"><a href="https://github.com/WICG/compression/issues/34">Include brotli</a> <span>(WICG/compression#34)</span></td>
-      </tr>
-      <tr>
-        <td class="total">26</td>
-        <td class="recent">7</td>
-        <td class="title"><a href="https://github.com/WICG/file-system-access/issues/297">Permanent permission (Ex : Store E2E encryption keys)</a> <span>(WICG/file-system-access#297)</span></td>
-      </tr>
-      <tr>
-        <td class="total">34</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/WICG/file-system-access/issues/72">Watching/notifications</a> <span>(WICG/file-system-access#72)</span></td>
-      </tr>
-      <tr>
-        <td class="total">18</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/WICG/keyboard-map/issues/30">Keyboard Map introduces a high entropy fingerprinting surface</a> <span>(WICG/keyboard-map#30)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/WICG/scroll-to-text-fragment/issues/109">Ethical, paradigmal, and UX concerns?</a> <span>(WICG/scroll-to-text-fragment#109)</span></td>
-      </tr>
-      <tr>
-        <td class="total">17</td>
-        <td class="recent">4</td>
-        <td class="title"><a href="https://github.com/WICG/scroll-to-text-fragment/issues/76">privacy concerns with proposal through inducing network requests</a> <span>(WICG/scroll-to-text-fragment#76)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/WICG/ua-client-hints/issues/314">VTEX UA-CH &amp; UA Reduction Testing Results</a> <span>(WICG/ua-client-hints#314)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/WICG/urlpattern/issues/73">consider generating URL strings from a URLPattern</a> <span>(WICG/urlpattern#73)</span></td>
-      </tr>
-      <tr>
-        <td class="total">84</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/WICG/webpackage/issues/551">Correct / real URLs should be enforced, to avoid breaking adblockers</a> <span>(WICG/webpackage#551)</span></td>
-      </tr>
-      <tr>
-        <td class="total">78</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/WICG/webpackage/issues/422">Avoiding Built-In Tracking in Signed Packages</a> <span>(WICG/webpackage#422)</span></td>
-      </tr>
-      <tr>
-        <td class="total">87</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/WebAudio/web-audio-api/issues/2458">Planar-only considered harmful</a> <span>(WebAudio/web-audio-api#2458)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/WebAudio/web-audio-api/issues/2423">Worker support for BaseAudioContext</a> <span>(WebAudio/web-audio-api#2423)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/WebAudio/web-audio-api/issues/2402">Phase-offset of oscillator nodes</a> <span>(WebAudio/web-audio-api#2402)</span></td>
-      </tr>
-      <tr>
-        <td class="total">43</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/WebAudio/web-audio-api/issues/2397">Exposing a playbackPosition property on AudioBufferSourceNode.</a> <span>(WebAudio/web-audio-api#2397)</span></td>
-      </tr>
-      <tr>
-        <td class="total">18</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/WebAudio/web-midi-api/issues/99">MIDI API should be available from Workers?</a> <span>(WebAudio/web-midi-api#99)</span></td>
-      </tr>
-      <tr>
-        <td class="total">19</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/WebAudio/web-midi-api/issues/45">Virtual MIDI ports</a> <span>(WebAudio/web-midi-api#45)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/WebBluetoothCG/web-bluetooth/issues/422">Service Worker support for WebBluetooth</a> <span>(WebBluetoothCG/web-bluetooth#422)</span></td>
-      </tr>
-      <tr>
-        <td class="total">14</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/WebBluetoothCG/web-bluetooth/issues/383">API which provides the negotiated MTU is required</a> <span>(WebBluetoothCG/web-bluetooth#383)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/WebBluetoothCG/web-bluetooth/issues/311">Consider exposing a connection&#x27;s RSSI</a> <span>(WebBluetoothCG/web-bluetooth#311)</span></td>
-      </tr>
-      <tr>
-        <td class="total">24</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/WebBluetoothCG/web-bluetooth/issues/231">Advertisement / Beacon Broadcast Support</a> <span>(WebBluetoothCG/web-bluetooth#231)</span></td>
-      </tr>
-      <tr>
-        <td class="total">39</td>
-        <td class="recent">24</td>
-        <td class="title"><a href="https://github.com/gpuweb/gpuweb/issues/3015">Mesh shader support</a> <span>(gpuweb/gpuweb#3015)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/gpuweb/gpuweb/issues/2377">Atomic&lt;T&gt; vs Untyped Atomics</a> <span>(gpuweb/gpuweb#2377)</span></td>
-      </tr>
-      <tr>
-        <td class="total">24</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/gpuweb/gpuweb/issues/847">Possibility of SPIR-V and/or GLSL as a WebGPU extension?</a> <span>(gpuweb/gpuweb#847)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/gpuweb/gpuweb/issues/737">Assignment of swizzled values should be permitted</a> <span>(gpuweb/gpuweb#737)</span></td>
-      </tr>
-      <tr>
-        <td class="total">45</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/gpuweb/gpuweb/issues/535">Ray-Tracing extension</a> <span>(gpuweb/gpuweb#535)</span></td>
-      </tr>
-      <tr>
-        <td class="total">14</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/gpuweb/gpuweb/issues/445">Investigation: Tessellation</a> <span>(gpuweb/gpuweb#445)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/httpwg/http-extensions/issues/762">SameSite Cookies and Iframes</a> <span>(httpwg/http-extensions#762)</span></td>
-      </tr>
-      <tr>
-        <td class="total">20</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/privacycg/private-click-measurement/issues/78">High volume of requests to add domains to the PSL </a> <span>(privacycg/private-click-measurement#78)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/privacycg/private-click-measurement/issues/60">The &quot;Etsy Issue&quot;</a> <span>(privacycg/private-click-measurement#60)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/tc39/ecma262/issues/1194">Symbols can&#x27;t be used as WeakMap keys</a> <span>(tc39/ecma262#1194)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/tc39/ecma262/issues/1114">Unwrap proxies for native methods.</a> <span>(tc39/ecma262#1114)</span></td>
-      </tr>
-      <tr>
-        <td class="total">26</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/tc39/ecma262/issues/535">Response to the proposal to add explicit tail call syntax to ECMAScript</a> <span>(tc39/ecma262#535)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/tc39/ecma262/issues/395">Built-in Modules</a> <span>(tc39/ecma262#395)</span></td>
-      </tr>
-      <tr>
-        <td class="total">19</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/tc39/ecma402/issues/294">add String.toTitleCase, String.toLocaleTitleCase</a> <span>(tc39/ecma402#294)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/tc39/ecma402/issues/47">Intl.DurationFormat</a> <span>(tc39/ecma402#47)</span></td>
-      </tr>
-      <tr>
-        <td class="total">25</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/tc39/ecma402/issues/6">First day of the week -- Intl.getCalendarInfo()</a> <span>(tc39/ecma402#6)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/tc39/proposal-change-array-by-copy/issues/80">Alternative to &#x60;toSpliced()&#x60;</a> <span>(tc39/proposal-change-array-by-copy#80)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/tc39/proposal-decorators/issues/430">Prohibiting whitespace after &#x60;@&#x60;</a> <span>(tc39/proposal-decorators#430)</span></td>
-      </tr>
-      <tr>
-        <td class="total">60</td>
-        <td class="recent">17</td>
-        <td class="title"><a href="https://github.com/tc39/proposal-decorators/issues/306">[Feature Request] allow decorate for ALL javascript entities</a> <span>(tc39/proposal-decorators#306)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/tc39/proposal-decorators/issues/231">Decorator cookbook</a> <span>(tc39/proposal-decorators#231)</span></td>
-      </tr>
-      <tr>
-        <td class="total">16</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/tc39/proposal-import-assertions/issues/99">Could the static and dynamic import syntaxes be more symmetric?</a> <span>(tc39/proposal-import-assertions#99)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/tc39/proposal-json-modules/issues/14">Support JSON5</a> <span>(tc39/proposal-json-modules#14)</span></td>
-      </tr>
-      <tr>
-        <td class="total">67</td>
-        <td class="recent">4</td>
-        <td class="title"><a href="https://github.com/tc39/proposal-temporal/issues/1450">Tracking issue for syncing with IETF standardization work (req&#x27;d before implementers can ship unflagged)</a> <span>(tc39/proposal-temporal#1450)</span></td>
-      </tr>
-      <tr>
-        <td class="total">28</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/w3c/IndexedDB/issues/51">Add an Observer API</a> <span>(w3c/IndexedDB#51)</span></td>
-      </tr>
-      <tr>
-        <td class="total">18</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/IntersectionObserver/issues/428">Allow dynamically changing rootMargin</a> <span>(w3c/IntersectionObserver#428)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/IntersectionObserver/issues/244">rootMargin should allow 0 without units</a> <span>(w3c/IntersectionObserver#244)</span></td>
-      </tr>
-      <tr>
-        <td class="total">17</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/IntersectionObserver/issues/124">How should larger-than-viewport-dimension targets be handled</a> <span>(w3c/IntersectionObserver#124)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/ServiceWorker/issues/1390">&#x60;&lt;iframe sandbox /&gt;&#x60; + SW</a> <span>(w3c/ServiceWorker#1390)</span></td>
-      </tr>
-      <tr>
-        <td class="total">14</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/ServiceWorker/issues/1208">Feature request: Provide a way to delay execution of a new service worker</a> <span>(w3c/ServiceWorker#1208)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/ServiceWorker/issues/1016">serviceworker.skipWaiting</a> <span>(w3c/ServiceWorker#1016)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/ServiceWorker/issues/977">Allow Caching of POST requests</a> <span>(w3c/ServiceWorker#977)</span></td>
-      </tr>
-      <tr>
-        <td class="total">14</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/ServiceWorker/issues/693">Replaying POST requests</a> <span>(w3c/ServiceWorker#693)</span></td>
-      </tr>
-      <tr>
-        <td class="total">33</td>
-        <td class="recent">33</td>
-        <td class="title"><a href="https://github.com/w3c/aria/issues/1785">Add aria-link-target property</a> <span>(w3c/aria#1785)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/w3c/aria/issues/1440">Secondary actions on items in composite widget roles</a> <span>(w3c/aria#1440)</span></td>
-      </tr>
-      <tr>
-        <td class="total">21</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/aria/issues/1404">Extend support for aria-expanded to the radio role</a> <span>(w3c/aria#1404)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/aria/issues/1353">Should ARIA provide better support for routing in single-page applications?</a> <span>(w3c/aria#1353)</span></td>
-      </tr>
-      <tr>
-        <td class="total">25</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/autoplay/issues/13">Media autoplay permission</a> <span>(w3c/autoplay#13)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/battery/issues/9">Detect power saving mode</a> <span>(w3c/battery#9)</span></td>
-      </tr>
-      <tr>
-        <td class="total">44</td>
-        <td class="recent">44</td>
-        <td class="title"><a href="https://github.com/w3c/clipboard-apis/issues/182">Interoperability issue: &#x60;navigator.clipboard.write()&#x60; and &#x60;navigator.clipboard.writeText()&#x60; user gesture requirement</a> <span>(w3c/clipboard-apis#182)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/clipboard-apis/issues/64">Initialization of clipboardData by ClipboardEvent constructor</a> <span>(w3c/clipboard-apis#64)</span></td>
-      </tr>
-      <tr>
-        <td class="total">23</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/css-houdini-drafts/issues/857">Proposal: Custom functions for modifying CSS values</a> <span>(w3c/css-houdini-drafts#857)</span></td>
-      </tr>
-      <tr>
-        <td class="total">28</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/css-houdini-drafts/issues/135">[font-metrics-api] Clarify Canvas Glyph Drawing Use Case</a> <span>(w3c/css-houdini-drafts#135)</span></td>
-      </tr>
-      <tr>
-        <td class="total">41</td>
-        <td class="recent">41</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7922">[css-shadow-parts] Make &#x60;::slotted()&#x60; a combinator</a> <span>(w3c/csswg-drafts#7922)</span></td>
-      </tr>
-      <tr>
-        <td class="total">82</td>
-        <td class="recent">82</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7707">New &#x60;border-radius&#x60; value for perfectly matching nested radii</a> <span>(w3c/csswg-drafts#7707)</span></td>
-      </tr>
-      <tr>
-        <td class="total">20</td>
-        <td class="recent">20</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7648">[css-images] Mesh gradient / Freeform gradient</a> <span>(w3c/csswg-drafts#7648)</span></td>
-      </tr>
-      <tr>
-        <td class="total">442</td>
-        <td class="recent">442</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7577">[css-values-4][css-writing-modes-4] Revisit decision to use 永 instead of 水 as the ic unit</a> <span>(w3c/csswg-drafts#7577)</span></td>
-      </tr>
-      <tr>
-        <td class="total">16</td>
-        <td class="recent">16</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7575">[scroll-animations-1] Bring back Scroll Offsets</a> <span>(w3c/csswg-drafts#7575)</span></td>
-      </tr>
-      <tr>
-        <td class="total">83</td>
-        <td class="recent">81</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7544">[selectors] Proposal for a :hover-only pseudo class</a> <span>(w3c/csswg-drafts#7544)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">11</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7475">[css-position-3] Reinterpret viewport positioned (fixed, sticky) elements wrt virtual keyboard</a> <span>(w3c/csswg-drafts#7475)</span></td>
-      </tr>
-      <tr>
-        <td class="total">75</td>
-        <td class="recent">6</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7387">[css-flexbox][css-grid] Providing authors with a method of opting into following the visual order, rather than logical order</a> <span>(w3c/csswg-drafts#7387)</span></td>
-      </tr>
-      <tr>
-        <td class="total">44</td>
-        <td class="recent">4</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7379">[css-variables-2] Custom units as simple variable desugaring</a> <span>(w3c/csswg-drafts#7379)</span></td>
-      </tr>
-      <tr>
-        <td class="total">37</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7273">map-get function proposal for customising web component styles</a> <span>(w3c/csswg-drafts#7273)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7269">[selectors] &#x60;:focusable&#x60; pseudo-class</a> <span>(w3c/csswg-drafts#7269)</span></td>
-      </tr>
-      <tr>
-        <td class="total">33</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7172">Give authors the ability to style form validation messages</a> <span>(w3c/csswg-drafts#7172)</span></td>
-      </tr>
-      <tr>
-        <td class="total">25</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6986">[css-overflow] Proposing &#x60;scroll-start&#x60;: allowing overflow scroll to not always start at 0 on 1st layout pass</a> <span>(w3c/csswg-drafts#6986)</span></td>
-      </tr>
-      <tr>
-        <td class="total">17</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6985">[css-scroll-snap] Proposing &#x60;:snapped&#x60;: exposing private snapped item browser state for developers and designers</a> <span>(w3c/csswg-drafts#6985)</span></td>
-      </tr>
-      <tr>
-        <td class="total">62</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6684">[css-conditional-4] Rename @when to @if</a> <span>(w3c/csswg-drafts#6684)</span></td>
-      </tr>
-      <tr>
-        <td class="total">34</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6517">[mediaqueries-5] Script control of (prefers-*) queries</a> <span>(w3c/csswg-drafts#6517)</span></td>
-      </tr>
-      <tr>
-        <td class="total">31</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6467">[css-backgrounds] border-radius with a circular edge</a> <span>(w3c/csswg-drafts#6467)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6466">[css-cascade] Evaluate specificity of ::slotted and global styles in the same conditions</a> <span>(w3c/csswg-drafts#6466)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6449">[css-ui-4] &#x60;input-security&#x60; may be misleading</a> <span>(w3c/csswg-drafts#6449)</span></td>
-      </tr>
-      <tr>
-        <td class="total">30</td>
-        <td class="recent">4</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6296">[css-backgrounds] Add support for squircle and superellipse to corner-shape</a> <span>(w3c/csswg-drafts#6296)</span></td>
-      </tr>
-      <tr>
-        <td class="total">35</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6261">[css-easing-2] Provide JavaScript API for CSS easing functions</a> <span>(w3c/csswg-drafts#6261)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6247">[selectors][mediaqueries] :media() pseudo-class as a shortcut for one-off media queries</a> <span>(w3c/csswg-drafts#6247)</span></td>
-      </tr>
-      <tr>
-        <td class="total">28</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6026">[css-values] Use of 100vw is causing pointless horizontal scrollbars on some websites</a> <span>(w3c/csswg-drafts#6026)</span></td>
-      </tr>
-      <tr>
-        <td class="total">18</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5979">[css-selectors] Proposal for allowing selectors that depend on layout (:stuck, :snap, :on-screen, etc)</a> <span>(w3c/csswg-drafts#5979)</span></td>
-      </tr>
-      <tr>
-        <td class="total">19</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5952">[css-position] Ability to set a positioned element&#x27;s containing block to another element</a> <span>(w3c/csswg-drafts#5952)</span></td>
-      </tr>
-      <tr>
-        <td class="total">24</td>
-        <td class="recent">4</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5889">[css-conditional] [css-contain] &#x60;srcset&#x60; and &#x60;sizes&#x60; interaction with container queries</a> <span>(w3c/csswg-drafts#5889)</span></td>
-      </tr>
-      <tr>
-        <td class="total">14</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5782">[css-color-5] Findings on SCSS function usage to inform direction of Color 5</a> <span>(w3c/csswg-drafts#5782)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5629">Multiple stylesheets per file</a> <span>(w3c/csswg-drafts#5629)</span></td>
-      </tr>
-      <tr>
-        <td class="total">28</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5624">[css-variables?] Higher level custom properties that control multiple declarations</a> <span>(w3c/csswg-drafts#5624)</span></td>
-      </tr>
-      <tr>
-        <td class="total">79</td>
-        <td class="recent">9</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5292">[css-color-5] Add &#x60;currentBackgroundColor&#x60; Variable</a> <span>(w3c/csswg-drafts#5292)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5270">[css-text] Allow alias for language hyphenation</a> <span>(w3c/csswg-drafts#5270)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5155">[resize-observer] Notification after element is no longer referenced</a> <span>(w3c/csswg-drafts#5155)</span></td>
-      </tr>
-      <tr>
-        <td class="total">28</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5023">[resize-observer-1] Turn ResizeObserver loop limit exceeded error into warning</a> <span>(w3c/csswg-drafts#5023)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4968">[css-values][css-images] Allow trailing comma in gradient functions (and probably others)</a> <span>(w3c/csswg-drafts#4968)</span></td>
-      </tr>
-      <tr>
-        <td class="total">97</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4907">[css-animations-2] Proposal: Time-based Keyframe Animations</a> <span>(w3c/csswg-drafts#4907)</span></td>
-      </tr>
-      <tr>
-        <td class="total">353</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4770">Let’s Define CSS 4</a> <span>(w3c/csswg-drafts#4770)</span></td>
-      </tr>
-      <tr>
-        <td class="total">21</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4736">Proposing new CSS primitives to enable great web experiences on foldable &amp; dual-screen devices</a> <span>(w3c/csswg-drafts#4736)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4708">[css-box] increase pointer target size independently of element layout</a> <span>(w3c/csswg-drafts#4708)</span></td>
-      </tr>
-      <tr>
-        <td class="total">16</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4707">[css-inline] vertically align to middle of cap height</a> <span>(w3c/csswg-drafts#4707)</span></td>
-      </tr>
-      <tr>
-        <td class="total">62</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4559">[css-values] Proposal: add sibling-count() and sibling-index()</a> <span>(w3c/csswg-drafts#4559)</span></td>
-      </tr>
-      <tr>
-        <td class="total">16</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4443">[css-mediaqueries] expose user left/right hand preference</a> <span>(w3c/csswg-drafts#4443)</span></td>
-      </tr>
-      <tr>
-        <td class="total">35</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4431">[css-backgrounds] Make box-shadow a Shorthand Property</a> <span>(w3c/csswg-drafts#4431)</span></td>
-      </tr>
-      <tr>
-        <td class="total">27</td>
-        <td class="recent">4</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4416">[css-grid] grid area as element</a> <span>(w3c/csswg-drafts#4416)</span></td>
-      </tr>
-      <tr>
-        <td class="total">255</td>
-        <td class="recent">15</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4410">[css-pseudo-4] Standardizing input[type&#x3D;&quot;range&quot;] styling</a> <span>(w3c/csswg-drafts#4410)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4141">[css-media-queries] Foldables support and enablement</a> <span>(w3c/csswg-drafts#4141)</span></td>
-      </tr>
-      <tr>
-        <td class="total">95</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4092">Make child visible outside of &#x60;overflow: hidden&#x60;</a> <span>(w3c/csswg-drafts#4092)</span></td>
-      </tr>
-      <tr>
-        <td class="total">20</td>
-        <td class="recent">4</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3896">[css-shadow-parts][css-scoping] Allow ::part after ::slotted</a> <span>(w3c/csswg-drafts#3896)</span></td>
-      </tr>
-      <tr>
-        <td class="total">57</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3837">[css-animation] Motion Blur</a> <span>(w3c/csswg-drafts#3837)</span></td>
-      </tr>
-      <tr>
-        <td class="total">164</td>
-        <td class="recent">16</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3744">[cssom-view-1] Provide onAnimationEnd callback in scrollIntoView options</a> <span>(w3c/csswg-drafts#3744)</span></td>
-      </tr>
-      <tr>
-        <td class="total">111</td>
-        <td class="recent">7</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3714">[css-selectors] Reference selectors</a> <span>(w3c/csswg-drafts#3714)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3578">[css-env][mediaqueries] Support comparing value of environment variable</a> <span>(w3c/csswg-drafts#3578)</span></td>
-      </tr>
-      <tr>
-        <td class="total">55</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3559">[css-conditional] testing support of properties and values with partial implementations</a> <span>(w3c/csswg-drafts#3559)</span></td>
-      </tr>
-      <tr>
-        <td class="total">209</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3547">[css-scoping] Please bring back scoped styles</a> <span>(w3c/csswg-drafts#3547)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">6</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3497">[cssom-view]  Clarify scroll-behavior: &quot;auto&quot;</a> <span>(w3c/csswg-drafts#3497)</span></td>
-      </tr>
-      <tr>
-        <td class="total">19</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3434">[css-text] Prevent line breaking after explicit hyphens</a> <span>(w3c/csswg-drafts#3434)</span></td>
-      </tr>
-      <tr>
-        <td class="total">73</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3308">[css-exclusions] Status of the exclusions spec</a> <span>(w3c/csswg-drafts#3308)</span></td>
-      </tr>
-      <tr>
-        <td class="total">291</td>
-        <td class="recent">9</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3240">[css-inline] Leading control at start/end of block</a> <span>(w3c/csswg-drafts#3240)</span></td>
-      </tr>
-      <tr>
-        <td class="total">19</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3208">[css-pseudo-4] &#x60;::nth-letter&#x60; pseudo-element</a> <span>(w3c/csswg-drafts#3208)</span></td>
-      </tr>
-      <tr>
-        <td class="total">21</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3136">[css-tables] Collapsed table borders don&#x27;t follow sticky rows/cells when they stick</a> <span>(w3c/csswg-drafts#3136)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">11</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3080">Do we need :focus-visible-within ?</a> <span>(w3c/csswg-drafts#3080)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3072">[selectors-4] :valid-within / :invalid-within pseudo-classes</a> <span>(w3c/csswg-drafts#3072)</span></td>
-      </tr>
-      <tr>
-        <td class="total">17</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3070">[css-flexbox-2] Add flex-wrap: balance;</a> <span>(w3c/csswg-drafts#3070)</span></td>
-      </tr>
-      <tr>
-        <td class="total">52</td>
-        <td class="recent">5</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3027">Request for a &quot;checked-within&quot; pseudo class</a> <span>(w3c/csswg-drafts#3027)</span></td>
-      </tr>
-      <tr>
-        <td class="total">24</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3012">[selectors] Solve :visited once and for all</a> <span>(w3c/csswg-drafts#3012)</span></td>
-      </tr>
-      <tr>
-        <td class="total">40</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2923">[css-multicol] Overflow in the block direction for continuous media</a> <span>(w3c/csswg-drafts#2923)</span></td>
-      </tr>
-      <tr>
-        <td class="total">16</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2894">[css-ui] Yes, it would make sense to have selectable pseudo elements</a> <span>(w3c/csswg-drafts#2894)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2892">[css-ui][css-background] should clarify outline drawing behavior for boxes with negative sizes</a> <span>(w3c/csswg-drafts#2892)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2891">[css-nesting] support nesting at-rules</a> <span>(w3c/csswg-drafts#2891)</span></td>
-      </tr>
-      <tr>
-        <td class="total">21</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2864">[css-values-4] inherit() function: like var() for parent value, for any property</a> <span>(w3c/csswg-drafts#2864)</span></td>
-      </tr>
-      <tr>
-        <td class="total">31</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2826">[css-values] random() function</a> <span>(w3c/csswg-drafts#2826)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2820">[css-env-1] built-in env() features must go through CSSWG&#x27;s standardization process</a> <span>(w3c/csswg-drafts#2820)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2808">[css-grid] Introducing overlapping cells in grid-template-areas syntax</a> <span>(w3c/csswg-drafts#2808)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2627">[css-env] Adding custom env() variables</a> <span>(w3c/csswg-drafts#2627)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2530">[css-grid] Property &quot;grid-item-of&quot;: display any element as part of any given grid</a> <span>(w3c/csswg-drafts#2530)</span></td>
-      </tr>
-      <tr>
-        <td class="total">29</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2528">[css-fonts-4] Feature for making text always fit the width of its parent</a> <span>(w3c/csswg-drafts#2528)</span></td>
-      </tr>
-      <tr>
-        <td class="total">26</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2406">[css-pseudo] Add a ::contents pseudo-element</a> <span>(w3c/csswg-drafts#2406)</span></td>
-      </tr>
-      <tr>
-        <td class="total">36</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2402">[css-grid] Feature: span to last track no matter whether auto-generated (implicit) tracks are involved or not</a> <span>(w3c/csswg-drafts#2402)</span></td>
-      </tr>
-      <tr>
-        <td class="total">35</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2296">[css-selectors] Selectors for “text-ish” and “button-ish” inputs</a> <span>(w3c/csswg-drafts#2296)</span></td>
-      </tr>
-      <tr>
-        <td class="total">72</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2208">[css-pseudo-5] ::text / ::text-node pseudoelement</a> <span>(w3c/csswg-drafts#2208)</span></td>
-      </tr>
-      <tr>
-        <td class="total">54</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2084">Ability to style &lt;details&gt;/&lt;summary&gt; to be open (e.g. for print styles)</a> <span>(w3c/csswg-drafts#2084)</span></td>
-      </tr>
-      <tr>
-        <td class="total">18</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2013">[css-forms] &lt;select/&gt; field pseudoelements</a> <span>(w3c/csswg-drafts#2013)</span></td>
-      </tr>
-      <tr>
-        <td class="total">58</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1943">[css-grid] Ability to target items in nth-row of autofilled, implicit grid</a> <span>(w3c/csswg-drafts#1943)</span></td>
-      </tr>
-      <tr>
-        <td class="total">20</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1879">[css3-page] CSS counter for position fixed elements on paged media</a> <span>(w3c/csswg-drafts#1879)</span></td>
-      </tr>
-      <tr>
-        <td class="total">34</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1771">[css-sizing] Auto-resize iframes based on content</a> <span>(w3c/csswg-drafts#1771)</span></td>
-      </tr>
-      <tr>
-        <td class="total">66</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1660">[css-position] Events for stickiness changes</a> <span>(w3c/csswg-drafts#1660)</span></td>
-      </tr>
-      <tr>
-        <td class="total">22</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1603">[css-values] Define crossorigin, preload and async URL modifiers</a> <span>(w3c/csswg-drafts#1603)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1562">[cssom-view] Consider making scroll methods return promises</a> <span>(w3c/csswg-drafts#1562)</span></td>
-      </tr>
-      <tr>
-        <td class="total">16</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1544">[css-transforms][css-logical] Flow-relative Transforms</a> <span>(w3c/csswg-drafts#1544)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1533">[selectors-4] Issue 11: Introduce pseudo-class matching when user changed the value of an input</a> <span>(w3c/csswg-drafts#1533)</span></td>
-      </tr>
-      <tr>
-        <td class="total">73</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1373">[css-grid-2] Ability for grid items to automatically span rows and columns based on content size</a> <span>(w3c/csswg-drafts#1373)</span></td>
-      </tr>
-      <tr>
-        <td class="total">118</td>
-        <td class="recent">5</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1332">[css-images] Add easing functions to color stops</a> <span>(w3c/csswg-drafts#1332)</span></td>
-      </tr>
-      <tr>
-        <td class="total">113</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1293">[css-overflow] Positioning Scrollbars on top or left of container</a> <span>(w3c/csswg-drafts#1293)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1282">[css-logical] Flow-relative syntax for &#x60;margin&#x60;-like shorthands</a> <span>(w3c/csswg-drafts#1282)</span></td>
-      </tr>
-      <tr>
-        <td class="total">32</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1173">[css-grid] aspect ratio units needed</a> <span>(w3c/csswg-drafts#1173)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1102">[css-grid-2] Allow minmax where max wins over min</a> <span>(w3c/csswg-drafts#1102)</span></td>
-      </tr>
-      <tr>
-        <td class="total">70</td>
-        <td class="recent">5</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1026">[css-values] enable the use of counter() inside calc()</a> <span>(w3c/csswg-drafts#1026)</span></td>
-      </tr>
-      <tr>
-        <td class="total">18</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1010">CSS Regex Selector</a> <span>(w3c/csswg-drafts#1010)</span></td>
-      </tr>
-      <tr>
-        <td class="total">78</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/945">[css-grid][css-flexbox] Pinterest/Masonry style layout support</a> <span>(w3c/csswg-drafts#945)</span></td>
-      </tr>
-      <tr>
-        <td class="total">294</td>
-        <td class="recent">8</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/865">[css3 positioning] support position:sticky inside an overflow:hidden|auto on general parents</a> <span>(w3c/csswg-drafts#865)</span></td>
-      </tr>
-      <tr>
-        <td class="total">25</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/820">[css-sizing] Adding a &#x27;size&#x27; shorthand for &#x27;width&#x27;/&#x27;height&#x27;</a> <span>(w3c/csswg-drafts#820)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/809">[cssom-view] window.innerScreenX windows.innerScreenY</a> <span>(w3c/csswg-drafts#809)</span></td>
-      </tr>
-      <tr>
-        <td class="total">16</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/796">[css-grid] Auto-placement aligning to a named line</a> <span>(w3c/csswg-drafts#796)</span></td>
-      </tr>
-      <tr>
-        <td class="total">446</td>
-        <td class="recent">9</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/626">[css-transitions] Transition to height (or width) &quot;auto&quot;</a> <span>(w3c/csswg-drafts#626)</span></td>
-      </tr>
-      <tr>
-        <td class="total">36</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/616">[css-text-4] Hyphenate only overflowing words?</a> <span>(w3c/csswg-drafts#616)</span></td>
-      </tr>
-      <tr>
-        <td class="total">14</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/542">[css-values] String concatentation</a> <span>(w3c/csswg-drafts#542)</span></td>
-      </tr>
-      <tr>
-        <td class="total">26</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/499">[css-grid] Decorative grid-cell pseudo-elements</a> <span>(w3c/csswg-drafts#499)</span></td>
-      </tr>
-      <tr>
-        <td class="total">40</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/333">[css-grid][css-sizing] Aspect Ratio</a> <span>(w3c/csswg-drafts#333)</span></td>
-      </tr>
-      <tr>
-        <td class="total">43</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/280">[css-timing] spring() timing function</a> <span>(w3c/csswg-drafts#280)</span></td>
-      </tr>
-      <tr>
-        <td class="total">89</td>
-        <td class="recent">6</td>
-        <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/156">CSS Snap Points: Event Model Missing</a> <span>(w3c/csswg-drafts#156)</span></td>
-      </tr>
-      <tr>
-        <td class="total">192</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/fxtf-drafts/issues/7">Proposal: Promote SVG Viewbox to a CSS property, extend to all transformable elements</a> <span>(w3c/fxtf-drafts#7)</span></td>
-      </tr>
-      <tr>
-        <td class="total">26</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/gamepad/issues/19">Vibrate feature for Gamepad</a> <span>(w3c/gamepad#19)</span></td>
-      </tr>
-      <tr>
-        <td class="total">26</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/w3c/largest-contentful-paint/issues/71">Refine LCP to take progressive loading into account</a> <span>(w3c/largest-contentful-paint#71)</span></td>
-      </tr>
-      <tr>
-        <td class="total">75</td>
-        <td class="recent">14</td>
-        <td class="title"><a href="https://github.com/w3c/manifest/issues/975">Add support for defining a theme color for both light &amp; dark modes (prefers color scheme)</a> <span>(w3c/manifest#975)</span></td>
-      </tr>
-      <tr>
-        <td class="total">39</td>
-        <td class="recent">5</td>
-        <td class="title"><a href="https://github.com/w3c/manifest/issues/737">Add a &quot;tabbed application&quot; mode</a> <span>(w3c/manifest#737)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/manifest/issues/676">Add optional &#x60;translations&#x60; member</a> <span>(w3c/manifest#676)</span></td>
-      </tr>
-      <tr>
-        <td class="total">31</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/manifest/issues/626">Add a means to associate a PWA with a file extension</a> <span>(w3c/manifest#626)</span></td>
-      </tr>
-      <tr>
-        <td class="total">17</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/media-source/issues/55">Please support for audio/wav (PCM) in MSE</a> <span>(w3c/media-source#55)</span></td>
-      </tr>
-      <tr>
-        <td class="total">22</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/picture-in-picture/issues/113">Picture-in-Picture for any Element</a> <span>(w3c/picture-in-picture#113)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/pointerevents/issues/358">touch-action: disable webview swipe back behavior</a> <span>(w3c/pointerevents#358)</span></td>
-      </tr>
-      <tr>
-        <td class="total">32</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/requestidlecallback/issues/68">Priority Queue Option</a> <span>(w3c/requestidlecallback#68)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/resource-timing/issues/102">Expose a way to link a call to fetch to an individual PerformanceResourceTiming object </a> <span>(w3c/resource-timing#102)</span></td>
-      </tr>
-      <tr>
-        <td class="total">21</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/resource-timing/issues/90">Add response status codes for resources in Resource Timing API.</a> <span>(w3c/resource-timing#90)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/screen-wake-lock/issues/129">Need maximum screen brightness mode</a> <span>(w3c/screen-wake-lock#129)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/svgwg/issues/785">Add a way to create conic gradients</a> <span>(w3c/svgwg#785)</span></td>
-      </tr>
-      <tr>
-        <td class="total">27</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/svgwg/issues/707">Referencing SVGs through USE from other domains</a> <span>(w3c/svgwg#707)</span></td>
-      </tr>
-      <tr>
-        <td class="total">55</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/svgwg/issues/332">Add &#x60;contenteditable&#x60; attribute for SVG text elements</a> <span>(w3c/svgwg#332)</span></td>
-      </tr>
-      <tr>
-        <td class="total">16</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/svgwg/issues/177">Allow stroke-dasharray/dashoffset % to be specified relative to path length</a> <span>(w3c/svgwg#177)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/trusted-types/issues/342">CfC to publish as an FPWD.</a> <span>(w3c/trusted-types#342)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/uievents/issues/202">Event order between &quot;compositionend&quot; and &quot;input&quot;</a> <span>(w3c/uievents#202)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/webappsec-change-password-url/issues/4">Add informative text clarifying that servers may use complex logic to determine where to redirect to</a> <span>(w3c/webappsec-change-password-url#4)</span></td>
-      </tr>
-      <tr>
-        <td class="total">17</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/webappsec-csp/issues/399">Support &#x27;strict-dynamic&#x27; in style-src</a> <span>(w3c/webappsec-csp#399)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/webappsec-csp/issues/92">WebRTC can be used for exfiltration</a> <span>(w3c/webappsec-csp#92)</span></td>
-      </tr>
-      <tr>
-        <td class="total">39</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/webappsec-permissions-policy/issues/208">How do I disable everything?</a> <span>(w3c/webappsec-permissions-policy#208)</span></td>
-      </tr>
-      <tr>
-        <td class="total">256</td>
-        <td class="recent">12</td>
-        <td class="title"><a href="https://github.com/w3c/webappsec-permissions-policy/issues/189">Proposal: define default for all</a> <span>(w3c/webappsec-permissions-policy#189)</span></td>
-      </tr>
-      <tr>
-        <td class="total">17</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/webappsec-subresource-integrity/issues/68">integrity for downloads</a> <span>(w3c/webappsec-subresource-integrity#68)</span></td>
-      </tr>
-      <tr>
-        <td class="total">47</td>
-        <td class="recent">10</td>
-        <td class="title"><a href="https://github.com/w3c/webauthn/issues/1255">Add a way to use webauthn without Javascript</a> <span>(w3c/webauthn#1255)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/webcodecs/issues/383">Can we drop the secure context (https) requirement?</a> <span>(w3c/webcodecs#383)</span></td>
-      </tr>
-      <tr>
-        <td class="total">20</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/webcrypto/issues/263">PROPOSAL: Add support for general (hardware backed) cryptographic signatures and key exchange</a> <span>(w3c/webcrypto#263)</span></td>
-      </tr>
-      <tr>
-        <td class="total">20</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/webcrypto/issues/223">Please add support for chacha20-poly1305</a> <span>(w3c/webcrypto#223)</span></td>
-      </tr>
-      <tr>
-        <td class="total">22</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/webcrypto/issues/196">Selected ECC curves are not secure</a> <span>(w3c/webcrypto#196)</span></td>
-      </tr>
-      <tr>
-        <td class="total">91</td>
-        <td class="recent">4</td>
-        <td class="title"><a href="https://github.com/w3c/webcrypto/issues/73">Bug 27755 - Using the Subtle Crypto Interface with Streams</a> <span>(w3c/webcrypto#73)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/w3c/webdriver/issues/1583">Capability to disable CORS checks [for given domains]</a> <span>(w3c/webdriver#1583)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/webdriver/issues/1355">Add command for file uploads (separate out from Element Send Keys)</a> <span>(w3c/webdriver#1355)</span></td>
-      </tr>
-      <tr>
-        <td class="total">104</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/webdriver/issues/1238">Allow Add Cookie and Get All Cookies to work for other site origins/mismatching domains</a> <span>(w3c/webdriver#1238)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/webdriver/issues/1234">URL blocking / ad blocking</a> <span>(w3c/webdriver#1234)</span></td>
-      </tr>
-      <tr>
-        <td class="total">21</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/w3c/webdriver/issues/1005">Missing &quot;scroll into view&quot; Actions primitive</a> <span>(w3c/webdriver#1005)</span></td>
-      </tr>
-      <tr>
-        <td class="total">57</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/w3c/webdriver/issues/385">Missing support for HTTP authentication prompts</a> <span>(w3c/webdriver#385)</span></td>
-      </tr>
-      <tr>
-        <td class="total">37</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/whatwg/console/issues/163">Extending the console to improve developer experience</a> <span>(whatwg/console#163)</span></td>
-      </tr>
-      <tr>
-        <td class="total">88</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/903">Proposal - Update XPath to (at least) v2.0</a> <span>(whatwg/dom#903)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/891">Proposal: New method to reorder child nodes</a> <span>(whatwg/dom#891)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/863">Add more explanation for Event concepts</a> <span>(whatwg/dom#863)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/837">Proposal: A Range.prototype.replaceContents(...)</a> <span>(whatwg/dom#837)</span></td>
-      </tr>
-      <tr>
-        <td class="total">147</td>
-        <td class="recent">7</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/831">Declarative Shadow DOM</a> <span>(whatwg/dom#831)</span></td>
-      </tr>
-      <tr>
-        <td class="total">54</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/736">Proposal: a DocumentFragment whose nodes do not get removed once inserted</a> <span>(whatwg/dom#736)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/583">Allow custom &quot;get the parent&quot; algorithms for EventTargets</a> <span>(whatwg/dom#583)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/546">Proposal: Element.elementIndex, Node.nodeIndex</a> <span>(whatwg/dom#546)</span></td>
-      </tr>
-      <tr>
-        <td class="total">596</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/544">Improving ergonomics of events with Observable</a> <span>(whatwg/dom#544)</span></td>
-      </tr>
-      <tr>
-        <td class="total">22</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/533">Make it possible to observe connected-ness of a node</a> <span>(whatwg/dom#533)</span></td>
-      </tr>
-      <tr>
-        <td class="total">40</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/412">[Proposal] Add EventTarget.getEventListeners()</a> <span>(whatwg/dom#412)</span></td>
-      </tr>
-      <tr>
-        <td class="total">19</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/331">Symbols should be allowed as Event types.</a> <span>(whatwg/dom#331)</span></td>
-      </tr>
-      <tr>
-        <td class="total">96</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/270">Proposal: DOMChangeList</a> <span>(whatwg/dom#270)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/150">Proposal to improve the DOM creation api</a> <span>(whatwg/dom#150)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/dom/issues/126">Disconnect single target instead of all</a> <span>(whatwg/dom#126)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/whatwg/fetch/issues/1254">Fetch body streams are not full duplex</a> <span>(whatwg/fetch#1254)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">7</td>
-        <td class="title"><a href="https://github.com/whatwg/fetch/issues/981">Trailer support in the API</a> <span>(whatwg/fetch#981)</span></td>
-      </tr>
-      <tr>
-        <td class="total">19</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/fetch/issues/973">Use case for Headers getAll</a> <span>(whatwg/fetch#973)</span></td>
-      </tr>
-      <tr>
-        <td class="total">37</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/fetch/issues/878">Proposal: Allow servers to take full responsibility for cross-origin access protection</a> <span>(whatwg/fetch#878)</span></td>
-      </tr>
-      <tr>
-        <td class="total">46</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/fetch/issues/607">FetchObserver (for a single fetch)</a> <span>(whatwg/fetch#607)</span></td>
-      </tr>
-      <tr>
-        <td class="total">43</td>
-        <td class="recent">4</td>
-        <td class="title"><a href="https://github.com/whatwg/fetch/issues/601">Header to opt out of opaque redirect</a> <span>(whatwg/fetch#601)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/fetch/issues/526">More informative error types</a> <span>(whatwg/fetch#526)</span></td>
-      </tr>
-      <tr>
-        <td class="total">18</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/fetch/pull/465">Block subresource requests whose URLs include credentials.</a> <span>(whatwg/fetch#465)</span></td>
-      </tr>
-      <tr>
-        <td class="total">26</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/fetch/issues/180">Add option to automatically abort response stream if the data stopped arriving for longer than a specified time</a> <span>(whatwg/fetch#180)</span></td>
-      </tr>
-      <tr>
-        <td class="total">23</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/fetch/issues/179">Add option to reject the fetch promise automatically after a certain time elapsed (with no API for arbitrary aborts)</a> <span>(whatwg/fetch#179)</span></td>
-      </tr>
-      <tr>
-        <td class="total">61</td>
-        <td class="recent">61</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/8358">Proposal: showEmojiPicker() on HTMLInputElement/HTMLTextareaElement</a> <span>(whatwg/html#8358)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">4</td>
-        <td class="title"><a href="https://github.com/whatwg/html/pull/8008">Add sizes&#x3D;auto to lazy-loaded &lt;img&gt;</a> <span>(whatwg/html#8008)</span></td>
-      </tr>
-      <tr>
-        <td class="total">17</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/7946">Proposal: Allow authors to enforce &quot;save as PDF&quot; when printing a document</a> <span>(whatwg/html#7946)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/pull/7320">Add the &lt;search&gt; element</a> <span>(whatwg/html#7320)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/7293">&lt;input type&#x3D;password&gt; should provide UI to show/hide its value</a> <span>(whatwg/html#7293)</span></td>
-      </tr>
-      <tr>
-        <td class="total">21</td>
-        <td class="recent">7</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/7141">Require &#x60;img&#x60; to be able to load the same video formats as &#x60;video&#x60; supports</a> <span>(whatwg/html#7141)</span></td>
-      </tr>
-      <tr>
-        <td class="total">36</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/7039">Proposal for Element.currentLang and Element.currentDir</a> <span>(whatwg/html#7039)</span></td>
-      </tr>
-      <tr>
-        <td class="total">17</td>
-        <td class="recent">4</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/6733">Support &#x60;&lt;optgroup&gt;&#x60; in &#x60;&lt;datalist&gt;&#x60;</a> <span>(whatwg/html#6733)</span></td>
-      </tr>
-      <tr>
-        <td class="total">32</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/6698">Allow HTML web apps to force 24 hour time format in &lt;input type&#x3D;time&gt;</a> <span>(whatwg/html#6698)</span></td>
-      </tr>
-      <tr>
-        <td class="total">30</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/6633">Allow &lt;source&gt; to use &lt;img&gt;&#x27;s sizes data as a fallback</a> <span>(whatwg/html#6633)</span></td>
-      </tr>
-      <tr>
-        <td class="total">20</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/6363">HTML Video Element: Proposal For Reintroduction of Media (and srcset/sizes) in Source Elements</a> <span>(whatwg/html#6363)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/6116">Feature request: to complement a &lt;noscript&gt; a &lt;yesscript&gt; to assist progressive enhancement</a> <span>(whatwg/html#6116)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/5811">Consider creating an HTML search element</a> <span>(whatwg/html#5811)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/5782">Custom Elements Built-in Style-ability</a> <span>(whatwg/html#5782)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/5744">Add an API to opt-out of back-forward cache?</a> <span>(whatwg/html#5744)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/5426">Pages with &#x60;color-scheme: dark&#x60; have too low link color contrast</a> <span>(whatwg/html#5426)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/5421">Proposal: &#x60;strong&#x60; attribute for &lt;input type&#x3D;password&gt;</a> <span>(whatwg/html#5421)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/5326">Programmatically setting focus navigation start point?</a> <span>(whatwg/html#5326)</span></td>
-      </tr>
-      <tr>
-        <td class="total">139</td>
-        <td class="recent">6</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/5312">Form Submission: Fix the &quot;Double Submit problem&quot; at the spec level</a> <span>(whatwg/html#5312)</span></td>
-      </tr>
-      <tr>
-        <td class="total">16</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/5025">Allow animations to be given a target framerate</a> <span>(whatwg/html#5025)</span></td>
-      </tr>
-      <tr>
-        <td class="total">35</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/4986">autocomplete attribute for street-address details</a> <span>(whatwg/html#4986)</span></td>
-      </tr>
-      <tr>
-        <td class="total">103</td>
-        <td class="recent">8</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/4923">add attribute  max-size to input type file</a> <span>(whatwg/html#4923)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/4818">Proposition: replace default invalid state for form elements by indeterminate</a> <span>(whatwg/html#4818)</span></td>
-      </tr>
-      <tr>
-        <td class="total">17</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/4785">[Proposal] ImageBitmap.getImageData</a> <span>(whatwg/html#4785)</span></td>
-      </tr>
-      <tr>
-        <td class="total">16</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/4654">Add &quot;auto sizes&quot; for lazy-loaded images</a> <span>(whatwg/html#4654)</span></td>
-      </tr>
-      <tr>
-        <td class="total">17</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/4633">Top layer research</a> <span>(whatwg/html#4633)</span></td>
-      </tr>
-      <tr>
-        <td class="total">14</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/4623">Something like the hidden attribute but still mapped to the accessibility API</a> <span>(whatwg/html#4623)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/4607">Focus meta-bug</a> <span>(whatwg/html#4607)</span></td>
-      </tr>
-      <tr>
-        <td class="total">13</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/4537">Proposal: Native solution for tooltips on the web platform</a> <span>(whatwg/html#4537)</span></td>
-      </tr>
-      <tr>
-        <td class="total">16</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/4508">Reinstate &lt;style scoped&gt;</a> <span>(whatwg/html#4508)</span></td>
-      </tr>
-      <tr>
-        <td class="total">133</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/4432">Add first-class support for differential script loading</a> <span>(whatwg/html#4432)</span></td>
-      </tr>
-      <tr>
-        <td class="total">17</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/4421">Responsive images causes performance issues on high-resolution devices</a> <span>(whatwg/html#4421)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/pull/4184">Focus the dialog element instead of the first focusable item</a> <span>(whatwg/html#4184)</span></td>
-      </tr>
-      <tr>
-        <td class="total">25</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/4180">Requesting &lt;input type&#x3D;&quot;switch&quot;&gt;</a> <span>(whatwg/html#4180)</span></td>
-      </tr>
-      <tr>
-        <td class="total">22</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/3754">HTML video element: negative playbackRate</a> <span>(whatwg/html#3754)</span></td>
-      </tr>
-      <tr>
-        <td class="total">34</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/3596">Allow adding icons/images to &lt;select&gt; and &lt;datalist&gt; &lt;option&gt;s</a> <span>(whatwg/html#3596)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/3595">Add autocorrect content attribute to HTMLElement</a> <span>(whatwg/html#3595)</span></td>
-      </tr>
-      <tr>
-        <td class="total">15</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/3577">HTML forms do not support the PUT, PATCH and DELETE methods</a> <span>(whatwg/html#3577)</span></td>
-      </tr>
-      <tr>
-        <td class="total">18</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/3571">OpenType Features and Variable Fonts for Canvas</a> <span>(whatwg/html#3571)</span></td>
-      </tr>
-      <tr>
-        <td class="total">55</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/3567">Have some way of opening &#x60;&lt;dialog&gt;&#x60; elements without JavaScript</a> <span>(whatwg/html#3567)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/3539">Potentially standardize window.find()</a> <span>(whatwg/html#3539)</span></td>
-      </tr>
-      <tr>
-        <td class="total">46</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/3518">Proposal: HTML passwordrules attribute</a> <span>(whatwg/html#3518)</span></td>
-      </tr>
-      <tr>
-        <td class="total">28</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/3400">Allow &lt;input type&#x3D;&quot;color&quot;&gt; to give an alpha channel and/or colors beyond sRGB?</a> <span>(whatwg/html#3400)</span></td>
-      </tr>
-      <tr>
-        <td class="total">28</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/3338">Proposal: Storage Access API</a> <span>(whatwg/html#3338)</span></td>
-      </tr>
-      <tr>
-        <td class="total">48</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/3281">Consider adding &lt;input type&#x3D;&quot;year&quot;&gt;</a> <span>(whatwg/html#3281)</span></td>
-      </tr>
-      <tr>
-        <td class="total">23</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/3269">Make FileList mutable.</a> <span>(whatwg/html#3269)</span></td>
-      </tr>
-      <tr>
-        <td class="total">23</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/2973">Add height-based selection to srcset/sizes</a> <span>(whatwg/html#2973)</span></td>
-      </tr>
-      <tr>
-        <td class="total">18</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/2894">Deprecate alert(), confirm(), prompt()</a> <span>(whatwg/html#2894)</span></td>
-      </tr>
-      <tr>
-        <td class="total">94</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/2791">Client side include feature for HTML</a> <span>(whatwg/html#2791)</span></td>
-      </tr>
-      <tr>
-        <td class="total">44</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/2722">Attribute to suggest filename for image elements (&lt;img filename&gt; / &lt;img download&gt;)</a> <span>(whatwg/html#2722)</span></td>
-      </tr>
-      <tr>
-        <td class="total">14</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/2311">Provide a way to have disabled form controls to be submitted (was: readonly attribute)</a> <span>(whatwg/html#2311)</span></td>
-      </tr>
-      <tr>
-        <td class="total">74</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/2271">Make custom attribute rules consistent with custom element name rules</a> <span>(whatwg/html#2271)</span></td>
-      </tr>
-      <tr>
-        <td class="total">36</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/2254">Standardize &lt;template&gt; variables and event handlers</a> <span>(whatwg/html#2254)</span></td>
-      </tr>
-      <tr>
-        <td class="total">73</td>
-        <td class="recent">8</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/2177">Setting headers for EventSource</a> <span>(whatwg/html#2177)</span></td>
-      </tr>
-      <tr>
-        <td class="total">27</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/2142">A way to stream content into an element</a> <span>(whatwg/html#2142)</span></td>
-      </tr>
-      <tr>
-        <td class="total">47</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/pull/1936">Add document.{parsed,contentLoaded,loaded} promises</a> <span>(whatwg/html#1936)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/1921">No video.removeTextTrack method</a> <span>(whatwg/html#1921)</span></td>
-      </tr>
-      <tr>
-        <td class="total">17</td>
-        <td class="recent">3</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/1809">[Proposal] New tags &lt;tabsection&gt;, &lt;tablist&gt;, &lt;tab&gt;, &lt;tabpanel&gt;</a> <span>(whatwg/html#1809)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/1766">Add onclose event to MessagePort</a> <span>(whatwg/html#1766)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/1632">Make &lt;label&gt; elements reflect CSS pseudoclasses on associated form element</a> <span>(whatwg/html#1632)</span></td>
-      </tr>
-      <tr>
-        <td class="total">36</td>
-        <td class="recent">2</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/897">Expose a stack of blocking elements</a> <span>(whatwg/html#897)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/617">A setTimeout that returns a promise that resolves after specified time.</a> <span>(whatwg/html#617)</span></td>
-      </tr>
-      <tr>
-        <td class="total">18</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/555">Allow auto-resize on iframe</a> <span>(whatwg/html#555)</span></td>
-      </tr>
-      <tr>
-        <td class="total">22</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/330">Expose API for the progress indicator</a> <span>(whatwg/html#330)</span></td>
-      </tr>
-      <tr>
-        <td class="total">20</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/html/issues/127">Add &#x60;document.ready&#x60; promise</a> <span>(whatwg/html#127)</span></td>
-      </tr>
-      <tr>
-        <td class="total">12</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/notifications/issues/108">Require user gesture for notification permission request</a> <span>(whatwg/notifications#108)</span></td>
-      </tr>
-      <tr>
-        <td class="total">31</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/storage/issues/11">Allow all storage types to expire, not just cookies</a> <span>(whatwg/storage#11)</span></td>
-      </tr>
-      <tr>
-        <td class="total">10</td>
-        <td class="recent">1</td>
-        <td class="title"><a href="https://github.com/whatwg/streams/issues/1019">ReadableStream.prototype.arrayBuffer()</a> <span>(whatwg/streams#1019)</span></td>
-      </tr>
-      <tr>
-        <td class="total">20</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/url/issues/568">Omitting www might be confusing for users</a> <span>(whatwg/url#568)</span></td>
-      </tr>
-      <tr>
-        <td class="total">28</td>
-        <td class="recent">4</td>
-        <td class="title"><a href="https://github.com/whatwg/url/issues/531">Support relative URLs</a> <span>(whatwg/url#531)</span></td>
-      </tr>
-      <tr>
-        <td class="total">11</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/url/issues/528">Feature proposal: eTLD+1 web API</a> <span>(whatwg/url#528)</span></td>
-      </tr>
-      <tr>
-        <td class="total">45</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/url/issues/491">Introduce a variant of url.searchParams that operates according to URL rules instead of &lt;form&gt; rules</a> <span>(whatwg/url#491)</span></td>
-      </tr>
-      <tr>
-        <td class="total">19</td>
-        <td class="recent">0</td>
-        <td class="title"><a href="https://github.com/whatwg/url/issues/421">URL.relative proposal</a> <span>(whatwg/url#421)</span></td>
-      </tr>
-      <tr>
-        <td class="total">63</td>
-        <td class="recent">9</td>
-        <td class="title"><a href="https://github.com/whatwg/url/issues/335">URLSearchParams delete all vs delete one</a> <span>(whatwg/url#335)</span></td>
-      </tr>
-      <tr>
-        <td class="total">143</td>
-        <td class="recent">16</td>
-        <td class="title"><a href="https://github.com/whatwg/websockets/issues/16">Support for custom headers for handshake </a> <span>(whatwg/websockets#16)</span></td>
-      </tr>
+        <tr>
+          <td class="total">24</td>
+          <td class="recent">10</td>
+          <td class="title"><a href="https://github.com/WICG/compression/issues/34">Include brotli</a> <span>(WICG/compression#34)</span></td>
+        </tr>
+        <tr>
+          <td class="total">26</td>
+          <td class="recent">7</td>
+          <td class="title"><a href="https://github.com/WICG/file-system-access/issues/297">Permanent permission (Ex : Store E2E encryption keys)</a> <span>(WICG/file-system-access#297)</span></td>
+        </tr>
+        <tr>
+          <td class="total">34</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/WICG/file-system-access/issues/72">Watching/notifications</a> <span>(WICG/file-system-access#72)</span></td>
+        </tr>
+        <tr>
+          <td class="total">18</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/WICG/keyboard-map/issues/30">Keyboard Map introduces a high entropy fingerprinting surface</a> <span>(WICG/keyboard-map#30)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/WICG/scroll-to-text-fragment/issues/109">Ethical, paradigmal, and UX concerns?</a> <span>(WICG/scroll-to-text-fragment#109)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">4</td>
+          <td class="title"><a href="https://github.com/WICG/scroll-to-text-fragment/issues/76">privacy concerns with proposal through inducing network requests</a> <span>(WICG/scroll-to-text-fragment#76)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/WICG/ua-client-hints/issues/314">VTEX UA-CH &amp; UA Reduction Testing Results</a> <span>(WICG/ua-client-hints#314)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/WICG/urlpattern/issues/73">consider generating URL strings from a URLPattern</a> <span>(WICG/urlpattern#73)</span></td>
+        </tr>
+        <tr>
+          <td class="total">84</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/WICG/webpackage/issues/551">Correct / real URLs should be enforced, to avoid breaking adblockers</a> <span>(WICG/webpackage#551)</span></td>
+        </tr>
+        <tr>
+          <td class="total">78</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/WICG/webpackage/issues/422">Avoiding Built-In Tracking in Signed Packages</a> <span>(WICG/webpackage#422)</span></td>
+        </tr>
+        <tr>
+          <td class="total">87</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/WebAudio/web-audio-api/issues/2458">Planar-only considered harmful</a> <span>(WebAudio/web-audio-api#2458)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">5</td>
+          <td class="title"><a href="https://github.com/WebAudio/web-audio-api/issues/2423">Worker support for BaseAudioContext</a> <span>(WebAudio/web-audio-api#2423)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/WebAudio/web-audio-api/issues/2402">Phase-offset of oscillator nodes</a> <span>(WebAudio/web-audio-api#2402)</span></td>
+        </tr>
+        <tr>
+          <td class="total">43</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/WebAudio/web-audio-api/issues/2397">Exposing a playbackPosition property on AudioBufferSourceNode.</a> <span>(WebAudio/web-audio-api#2397)</span></td>
+        </tr>
+        <tr>
+          <td class="total">18</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/WebAudio/web-midi-api/issues/99">MIDI API should be available from Workers?</a> <span>(WebAudio/web-midi-api#99)</span></td>
+        </tr>
+        <tr>
+          <td class="total">20</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/WebAudio/web-midi-api/issues/45">Virtual MIDI ports</a> <span>(WebAudio/web-midi-api#45)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/WebBluetoothCG/web-bluetooth/issues/422">Service Worker support for WebBluetooth</a> <span>(WebBluetoothCG/web-bluetooth#422)</span></td>
+        </tr>
+        <tr>
+          <td class="total">14</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/WebBluetoothCG/web-bluetooth/issues/383">API which provides the negotiated MTU is required</a> <span>(WebBluetoothCG/web-bluetooth#383)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/WebBluetoothCG/web-bluetooth/issues/311">Consider exposing a connection&#x27;s RSSI</a> <span>(WebBluetoothCG/web-bluetooth#311)</span></td>
+        </tr>
+        <tr>
+          <td class="total">24</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/WebBluetoothCG/web-bluetooth/issues/231">Advertisement / Beacon Broadcast Support</a> <span>(WebBluetoothCG/web-bluetooth#231)</span></td>
+        </tr>
+        <tr>
+          <td class="total">39</td>
+          <td class="recent">24</td>
+          <td class="title"><a href="https://github.com/gpuweb/gpuweb/issues/3015">Mesh shader support</a> <span>(gpuweb/gpuweb#3015)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/gpuweb/gpuweb/issues/2377">Atomic&lt;T&gt; vs Untyped Atomics</a> <span>(gpuweb/gpuweb#2377)</span></td>
+        </tr>
+        <tr>
+          <td class="total">24</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/gpuweb/gpuweb/issues/847">Possibility of SPIR-V and/or GLSL as a WebGPU extension?</a> <span>(gpuweb/gpuweb#847)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/gpuweb/gpuweb/issues/737">Assignment of swizzled values should be permitted</a> <span>(gpuweb/gpuweb#737)</span></td>
+        </tr>
+        <tr>
+          <td class="total">45</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/gpuweb/gpuweb/issues/535">Ray-Tracing extension</a> <span>(gpuweb/gpuweb#535)</span></td>
+        </tr>
+        <tr>
+          <td class="total">14</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/gpuweb/gpuweb/issues/445">Investigation: Tessellation</a> <span>(gpuweb/gpuweb#445)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/httpwg/http-extensions/issues/762">SameSite Cookies and Iframes</a> <span>(httpwg/http-extensions#762)</span></td>
+        </tr>
+        <tr>
+          <td class="total">20</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/privacycg/private-click-measurement/issues/78">High volume of requests to add domains to the PSL </a> <span>(privacycg/private-click-measurement#78)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/privacycg/private-click-measurement/issues/60">The &quot;Etsy Issue&quot;</a> <span>(privacycg/private-click-measurement#60)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/tc39/ecma262/issues/1194">Symbols can&#x27;t be used as WeakMap keys</a> <span>(tc39/ecma262#1194)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/tc39/ecma262/issues/1114">Unwrap proxies for native methods.</a> <span>(tc39/ecma262#1114)</span></td>
+        </tr>
+        <tr>
+          <td class="total">26</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/tc39/ecma262/issues/535">Response to the proposal to add explicit tail call syntax to ECMAScript</a> <span>(tc39/ecma262#535)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/tc39/ecma262/issues/395">Built-in Modules</a> <span>(tc39/ecma262#395)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/tc39/ecma402/issues/506">Add locale sensitive substring matching functions to Intl.Collator</a> <span>(tc39/ecma402#506)</span></td>
+        </tr>
+        <tr>
+          <td class="total">19</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/tc39/ecma402/issues/294">add String.toTitleCase, String.toLocaleTitleCase</a> <span>(tc39/ecma402#294)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/tc39/ecma402/issues/47">Intl.DurationFormat</a> <span>(tc39/ecma402#47)</span></td>
+        </tr>
+        <tr>
+          <td class="total">25</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/tc39/ecma402/issues/6">First day of the week -- Intl.getCalendarInfo()</a> <span>(tc39/ecma402#6)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/tc39/proposal-change-array-by-copy/issues/80">Alternative to &#x60;toSpliced()&#x60;</a> <span>(tc39/proposal-change-array-by-copy#80)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/tc39/proposal-decorators/issues/430">Prohibiting whitespace after &#x60;@&#x60;</a> <span>(tc39/proposal-decorators#430)</span></td>
+        </tr>
+        <tr>
+          <td class="total">62</td>
+          <td class="recent">19</td>
+          <td class="title"><a href="https://github.com/tc39/proposal-decorators/issues/306">[Feature Request] allow decorate for ALL javascript entities</a> <span>(tc39/proposal-decorators#306)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/tc39/proposal-decorators/issues/231">Decorator cookbook</a> <span>(tc39/proposal-decorators#231)</span></td>
+        </tr>
+        <tr>
+          <td class="total">16</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/tc39/proposal-import-assertions/issues/99">Could the static and dynamic import syntaxes be more symmetric?</a> <span>(tc39/proposal-import-assertions#99)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/tc39/proposal-json-modules/issues/14">Support JSON5</a> <span>(tc39/proposal-json-modules#14)</span></td>
+        </tr>
+        <tr>
+          <td class="total">67</td>
+          <td class="recent">4</td>
+          <td class="title"><a href="https://github.com/tc39/proposal-temporal/issues/1450">Tracking issue for syncing with IETF standardization work (req&#x27;d before implementers can ship unflagged)</a> <span>(tc39/proposal-temporal#1450)</span></td>
+        </tr>
+        <tr>
+          <td class="total">28</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/w3c/IndexedDB/issues/51">Add an Observer API</a> <span>(w3c/IndexedDB#51)</span></td>
+        </tr>
+        <tr>
+          <td class="total">18</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/IntersectionObserver/issues/428">Allow dynamically changing rootMargin</a> <span>(w3c/IntersectionObserver#428)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/IntersectionObserver/issues/244">rootMargin should allow 0 without units</a> <span>(w3c/IntersectionObserver#244)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/IntersectionObserver/issues/124">How should larger-than-viewport-dimension targets be handled</a> <span>(w3c/IntersectionObserver#124)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/ServiceWorker/issues/1390">&#x60;&lt;iframe sandbox /&gt;&#x60; + SW</a> <span>(w3c/ServiceWorker#1390)</span></td>
+        </tr>
+        <tr>
+          <td class="total">14</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/ServiceWorker/issues/1208">Feature request: Provide a way to delay execution of a new service worker</a> <span>(w3c/ServiceWorker#1208)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/ServiceWorker/issues/1016">serviceworker.skipWaiting</a> <span>(w3c/ServiceWorker#1016)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/ServiceWorker/issues/977">Allow Caching of POST requests</a> <span>(w3c/ServiceWorker#977)</span></td>
+        </tr>
+        <tr>
+          <td class="total">14</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/ServiceWorker/issues/693">Replaying POST requests</a> <span>(w3c/ServiceWorker#693)</span></td>
+        </tr>
+        <tr>
+          <td class="total">33</td>
+          <td class="recent">33</td>
+          <td class="title"><a href="https://github.com/w3c/aria/issues/1785">Add aria-link-target property</a> <span>(w3c/aria#1785)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/aria/issues/1440">Secondary actions on items in composite widget roles</a> <span>(w3c/aria#1440)</span></td>
+        </tr>
+        <tr>
+          <td class="total">21</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/aria/issues/1404">Extend support for aria-expanded to the radio role</a> <span>(w3c/aria#1404)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/aria/issues/1353">Should ARIA provide better support for routing in single-page applications?</a> <span>(w3c/aria#1353)</span></td>
+        </tr>
+        <tr>
+          <td class="total">25</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/autoplay/issues/13">Media autoplay permission</a> <span>(w3c/autoplay#13)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/battery/issues/9">Detect power saving mode</a> <span>(w3c/battery#9)</span></td>
+        </tr>
+        <tr>
+          <td class="total">44</td>
+          <td class="recent">44</td>
+          <td class="title"><a href="https://github.com/w3c/clipboard-apis/issues/182">Interoperability issue: &#x60;navigator.clipboard.write()&#x60; and &#x60;navigator.clipboard.writeText()&#x60; user gesture requirement</a> <span>(w3c/clipboard-apis#182)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/clipboard-apis/issues/64">Initialization of clipboardData by ClipboardEvent constructor</a> <span>(w3c/clipboard-apis#64)</span></td>
+        </tr>
+        <tr>
+          <td class="total">23</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/css-houdini-drafts/issues/857">Proposal: Custom functions for modifying CSS values</a> <span>(w3c/css-houdini-drafts#857)</span></td>
+        </tr>
+        <tr>
+          <td class="total">28</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/css-houdini-drafts/issues/135">[font-metrics-api] Clarify Canvas Glyph Drawing Use Case</a> <span>(w3c/css-houdini-drafts#135)</span></td>
+        </tr>
+        <tr>
+          <td class="total">41</td>
+          <td class="recent">41</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7922">[css-shadow-parts] Make &#x60;::slotted()&#x60; a combinator</a> <span>(w3c/csswg-drafts#7922)</span></td>
+        </tr>
+        <tr>
+          <td class="total">82</td>
+          <td class="recent">82</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7707">New &#x60;border-radius&#x60; value for perfectly matching nested radii</a> <span>(w3c/csswg-drafts#7707)</span></td>
+        </tr>
+        <tr>
+          <td class="total">20</td>
+          <td class="recent">20</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7648">[css-images] Mesh gradient / Freeform gradient</a> <span>(w3c/csswg-drafts#7648)</span></td>
+        </tr>
+        <tr>
+          <td class="total">442</td>
+          <td class="recent">442</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7577">[css-values-4][css-writing-modes-4] Revisit decision to use 永 instead of 水 as the ic unit</a> <span>(w3c/csswg-drafts#7577)</span></td>
+        </tr>
+        <tr>
+          <td class="total">16</td>
+          <td class="recent">16</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7575">[scroll-animations-1] Bring back Scroll Offsets</a> <span>(w3c/csswg-drafts#7575)</span></td>
+        </tr>
+        <tr>
+          <td class="total">83</td>
+          <td class="recent">26</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7544">[selectors] Proposal for a :hover-only pseudo class</a> <span>(w3c/csswg-drafts#7544)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">11</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7475">[css-position-3] Reinterpret viewport positioned (fixed, sticky) elements wrt virtual keyboard</a> <span>(w3c/csswg-drafts#7475)</span></td>
+        </tr>
+        <tr>
+          <td class="total">75</td>
+          <td class="recent">5</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7387">[css-flexbox][css-grid] Providing authors with a method of opting into following the visual order, rather than logical order</a> <span>(w3c/csswg-drafts#7387)</span></td>
+        </tr>
+        <tr>
+          <td class="total">44</td>
+          <td class="recent">4</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7379">[css-variables-2] Custom units as simple variable desugaring</a> <span>(w3c/csswg-drafts#7379)</span></td>
+        </tr>
+        <tr>
+          <td class="total">37</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7273">map-get function proposal for customising web component styles</a> <span>(w3c/csswg-drafts#7273)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7269">[selectors] &#x60;:focusable&#x60; pseudo-class</a> <span>(w3c/csswg-drafts#7269)</span></td>
+        </tr>
+        <tr>
+          <td class="total">33</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/7172">Give authors the ability to style form validation messages</a> <span>(w3c/csswg-drafts#7172)</span></td>
+        </tr>
+        <tr>
+          <td class="total">25</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6986">[css-overflow] Proposing &#x60;scroll-start&#x60;: allowing overflow scroll to not always start at 0 on 1st layout pass</a> <span>(w3c/csswg-drafts#6986)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6985">[css-scroll-snap] Proposing &#x60;:snapped&#x60;: exposing private snapped item browser state for developers and designers</a> <span>(w3c/csswg-drafts#6985)</span></td>
+        </tr>
+        <tr>
+          <td class="total">62</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6684">[css-conditional-4] Rename @when to @if</a> <span>(w3c/csswg-drafts#6684)</span></td>
+        </tr>
+        <tr>
+          <td class="total">34</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6517">[mediaqueries-5] Script control of (prefers-*) queries</a> <span>(w3c/csswg-drafts#6517)</span></td>
+        </tr>
+        <tr>
+          <td class="total">31</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6467">[css-backgrounds] border-radius with a circular edge</a> <span>(w3c/csswg-drafts#6467)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6466">[css-cascade] Evaluate specificity of ::slotted and global styles in the same conditions</a> <span>(w3c/csswg-drafts#6466)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6449">[css-ui-4] &#x60;input-security&#x60; may be misleading</a> <span>(w3c/csswg-drafts#6449)</span></td>
+        </tr>
+        <tr>
+          <td class="total">30</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6296">[css-backgrounds] Add support for squircle and superellipse to corner-shape</a> <span>(w3c/csswg-drafts#6296)</span></td>
+        </tr>
+        <tr>
+          <td class="total">35</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6261">[css-easing-2] Provide JavaScript API for CSS easing functions</a> <span>(w3c/csswg-drafts#6261)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6247">[selectors][mediaqueries] :media() pseudo-class as a shortcut for one-off media queries</a> <span>(w3c/csswg-drafts#6247)</span></td>
+        </tr>
+        <tr>
+          <td class="total">28</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/6026">[css-values] Use of 100vw is causing pointless horizontal scrollbars on some websites</a> <span>(w3c/csswg-drafts#6026)</span></td>
+        </tr>
+        <tr>
+          <td class="total">18</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5979">[css-selectors] Proposal for allowing selectors that depend on layout (:stuck, :snap, :on-screen, etc)</a> <span>(w3c/csswg-drafts#5979)</span></td>
+        </tr>
+        <tr>
+          <td class="total">20</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5952">[css-position] Ability to set a positioned element&#x27;s containing block to another element</a> <span>(w3c/csswg-drafts#5952)</span></td>
+        </tr>
+        <tr>
+          <td class="total">24</td>
+          <td class="recent">4</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5889">[css-conditional] [css-contain] &#x60;srcset&#x60; and &#x60;sizes&#x60; interaction with container queries</a> <span>(w3c/csswg-drafts#5889)</span></td>
+        </tr>
+        <tr>
+          <td class="total">14</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5782">[css-color-5] Findings on SCSS function usage to inform direction of Color 5</a> <span>(w3c/csswg-drafts#5782)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5629">Multiple stylesheets per file</a> <span>(w3c/csswg-drafts#5629)</span></td>
+        </tr>
+        <tr>
+          <td class="total">28</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5624">[css-variables?] Higher level custom properties that control multiple declarations</a> <span>(w3c/csswg-drafts#5624)</span></td>
+        </tr>
+        <tr>
+          <td class="total">79</td>
+          <td class="recent">9</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5292">[css-color-5] Add &#x60;currentBackgroundColor&#x60; Variable</a> <span>(w3c/csswg-drafts#5292)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5270">[css-text] Allow alias for language hyphenation</a> <span>(w3c/csswg-drafts#5270)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5155">[resize-observer] Notification after element is no longer referenced</a> <span>(w3c/csswg-drafts#5155)</span></td>
+        </tr>
+        <tr>
+          <td class="total">28</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/5023">[resize-observer-1] Turn ResizeObserver loop limit exceeded error into warning</a> <span>(w3c/csswg-drafts#5023)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4968">[css-values][css-images] Allow trailing comma in gradient functions (and probably others)</a> <span>(w3c/csswg-drafts#4968)</span></td>
+        </tr>
+        <tr>
+          <td class="total">97</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4907">[css-animations-2] Proposal: Time-based Keyframe Animations</a> <span>(w3c/csswg-drafts#4907)</span></td>
+        </tr>
+        <tr>
+          <td class="total">353</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4770">Let’s Define CSS 4</a> <span>(w3c/csswg-drafts#4770)</span></td>
+        </tr>
+        <tr>
+          <td class="total">21</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4736">Proposing new CSS primitives to enable great web experiences on foldable &amp; dual-screen devices</a> <span>(w3c/csswg-drafts#4736)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4708">[css-box] increase pointer target size independently of element layout</a> <span>(w3c/csswg-drafts#4708)</span></td>
+        </tr>
+        <tr>
+          <td class="total">16</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4707">[css-inline] vertically align to middle of cap height</a> <span>(w3c/csswg-drafts#4707)</span></td>
+        </tr>
+        <tr>
+          <td class="total">62</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4559">[css-values] Proposal: add sibling-count() and sibling-index()</a> <span>(w3c/csswg-drafts#4559)</span></td>
+        </tr>
+        <tr>
+          <td class="total">16</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4443">[css-mediaqueries] expose user left/right hand preference</a> <span>(w3c/csswg-drafts#4443)</span></td>
+        </tr>
+        <tr>
+          <td class="total">35</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4431">[css-backgrounds] Make box-shadow a Shorthand Property</a> <span>(w3c/csswg-drafts#4431)</span></td>
+        </tr>
+        <tr>
+          <td class="total">27</td>
+          <td class="recent">4</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4416">[css-grid] grid area as element</a> <span>(w3c/csswg-drafts#4416)</span></td>
+        </tr>
+        <tr>
+          <td class="total">255</td>
+          <td class="recent">15</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4410">[css-pseudo-4] Standardizing input[type&#x3D;&quot;range&quot;] styling</a> <span>(w3c/csswg-drafts#4410)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4141">[css-media-queries] Foldables support and enablement</a> <span>(w3c/csswg-drafts#4141)</span></td>
+        </tr>
+        <tr>
+          <td class="total">95</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/4092">Make child visible outside of &#x60;overflow: hidden&#x60;</a> <span>(w3c/csswg-drafts#4092)</span></td>
+        </tr>
+        <tr>
+          <td class="total">20</td>
+          <td class="recent">4</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3896">[css-shadow-parts][css-scoping] Allow ::part after ::slotted</a> <span>(w3c/csswg-drafts#3896)</span></td>
+        </tr>
+        <tr>
+          <td class="total">57</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3837">[css-animation] Motion Blur</a> <span>(w3c/csswg-drafts#3837)</span></td>
+        </tr>
+        <tr>
+          <td class="total">165</td>
+          <td class="recent">17</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3744">[cssom-view-1] Provide onAnimationEnd callback in scrollIntoView options</a> <span>(w3c/csswg-drafts#3744)</span></td>
+        </tr>
+        <tr>
+          <td class="total">111</td>
+          <td class="recent">7</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3714">[css-selectors] Reference selectors</a> <span>(w3c/csswg-drafts#3714)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3578">[css-env][mediaqueries] Support comparing value of environment variable</a> <span>(w3c/csswg-drafts#3578)</span></td>
+        </tr>
+        <tr>
+          <td class="total">55</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3559">[css-conditional] testing support of properties and values with partial implementations</a> <span>(w3c/csswg-drafts#3559)</span></td>
+        </tr>
+        <tr>
+          <td class="total">209</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3547">[css-scoping] Please bring back scoped styles</a> <span>(w3c/csswg-drafts#3547)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">5</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3497">[cssom-view]  Clarify scroll-behavior: &quot;auto&quot;</a> <span>(w3c/csswg-drafts#3497)</span></td>
+        </tr>
+        <tr>
+          <td class="total">19</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3434">[css-text] Prevent line breaking after explicit hyphens</a> <span>(w3c/csswg-drafts#3434)</span></td>
+        </tr>
+        <tr>
+          <td class="total">73</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3308">[css-exclusions] Status of the exclusions spec</a> <span>(w3c/csswg-drafts#3308)</span></td>
+        </tr>
+        <tr>
+          <td class="total">291</td>
+          <td class="recent">9</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3240">[css-inline] Leading control at start/end of block</a> <span>(w3c/csswg-drafts#3240)</span></td>
+        </tr>
+        <tr>
+          <td class="total">19</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3208">[css-pseudo-4] &#x60;::nth-letter&#x60; pseudo-element</a> <span>(w3c/csswg-drafts#3208)</span></td>
+        </tr>
+        <tr>
+          <td class="total">21</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3136">[css-tables] Collapsed table borders don&#x27;t follow sticky rows/cells when they stick</a> <span>(w3c/csswg-drafts#3136)</span></td>
+        </tr>
+        <tr>
+          <td class="total">14</td>
+          <td class="recent">11</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3080">Do we need :focus-visible-within ?</a> <span>(w3c/csswg-drafts#3080)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3072">[selectors-4] :valid-within / :invalid-within pseudo-classes</a> <span>(w3c/csswg-drafts#3072)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3070">[css-flexbox-2] Add flex-wrap: balance;</a> <span>(w3c/csswg-drafts#3070)</span></td>
+        </tr>
+        <tr>
+          <td class="total">52</td>
+          <td class="recent">5</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3027">Request for a &quot;checked-within&quot; pseudo class</a> <span>(w3c/csswg-drafts#3027)</span></td>
+        </tr>
+        <tr>
+          <td class="total">24</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/3012">[selectors] Solve :visited once and for all</a> <span>(w3c/csswg-drafts#3012)</span></td>
+        </tr>
+        <tr>
+          <td class="total">40</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2923">[css-multicol] Overflow in the block direction for continuous media</a> <span>(w3c/csswg-drafts#2923)</span></td>
+        </tr>
+        <tr>
+          <td class="total">16</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2894">[css-ui] Yes, it would make sense to have selectable pseudo elements</a> <span>(w3c/csswg-drafts#2894)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2892">[css-ui][css-background] should clarify outline drawing behavior for boxes with negative sizes</a> <span>(w3c/csswg-drafts#2892)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2891">[css-nesting] support nesting at-rules</a> <span>(w3c/csswg-drafts#2891)</span></td>
+        </tr>
+        <tr>
+          <td class="total">21</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2864">[css-values-4] inherit() function: like var() for parent value, for any property</a> <span>(w3c/csswg-drafts#2864)</span></td>
+        </tr>
+        <tr>
+          <td class="total">31</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2826">[css-values] random() function</a> <span>(w3c/csswg-drafts#2826)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2820">[css-env-1] built-in env() features must go through CSSWG&#x27;s standardization process</a> <span>(w3c/csswg-drafts#2820)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2808">[css-grid] Introducing overlapping cells in grid-template-areas syntax</a> <span>(w3c/csswg-drafts#2808)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2627">[css-env] Adding custom env() variables</a> <span>(w3c/csswg-drafts#2627)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2530">[css-grid] Property &quot;grid-item-of&quot;: display any element as part of any given grid</a> <span>(w3c/csswg-drafts#2530)</span></td>
+        </tr>
+        <tr>
+          <td class="total">29</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2528">[css-fonts-4] Feature for making text always fit the width of its parent</a> <span>(w3c/csswg-drafts#2528)</span></td>
+        </tr>
+        <tr>
+          <td class="total">26</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2406">[css-pseudo] Add a ::contents pseudo-element</a> <span>(w3c/csswg-drafts#2406)</span></td>
+        </tr>
+        <tr>
+          <td class="total">36</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2402">[css-grid] Feature: span to last track no matter whether auto-generated (implicit) tracks are involved or not</a> <span>(w3c/csswg-drafts#2402)</span></td>
+        </tr>
+        <tr>
+          <td class="total">35</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2296">[css-selectors] Selectors for “text-ish” and “button-ish” inputs</a> <span>(w3c/csswg-drafts#2296)</span></td>
+        </tr>
+        <tr>
+          <td class="total">72</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2208">[css-pseudo-5] ::text / ::text-node pseudoelement</a> <span>(w3c/csswg-drafts#2208)</span></td>
+        </tr>
+        <tr>
+          <td class="total">54</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2084">Ability to style &lt;details&gt;/&lt;summary&gt; to be open (e.g. for print styles)</a> <span>(w3c/csswg-drafts#2084)</span></td>
+        </tr>
+        <tr>
+          <td class="total">18</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/2013">[css-forms] &lt;select/&gt; field pseudoelements</a> <span>(w3c/csswg-drafts#2013)</span></td>
+        </tr>
+        <tr>
+          <td class="total">58</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1943">[css-grid] Ability to target items in nth-row of autofilled, implicit grid</a> <span>(w3c/csswg-drafts#1943)</span></td>
+        </tr>
+        <tr>
+          <td class="total">20</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1879">[css3-page] CSS counter for position fixed elements on paged media</a> <span>(w3c/csswg-drafts#1879)</span></td>
+        </tr>
+        <tr>
+          <td class="total">34</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1771">[css-sizing] Auto-resize iframes based on content</a> <span>(w3c/csswg-drafts#1771)</span></td>
+        </tr>
+        <tr>
+          <td class="total">66</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1660">[css-position] Events for stickiness changes</a> <span>(w3c/csswg-drafts#1660)</span></td>
+        </tr>
+        <tr>
+          <td class="total">22</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1603">[css-values] Define crossorigin, preload and async URL modifiers</a> <span>(w3c/csswg-drafts#1603)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1562">[cssom-view] Consider making scroll methods return promises</a> <span>(w3c/csswg-drafts#1562)</span></td>
+        </tr>
+        <tr>
+          <td class="total">16</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1544">[css-transforms][css-logical] Flow-relative Transforms</a> <span>(w3c/csswg-drafts#1544)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1533">[selectors-4] Issue 11: Introduce pseudo-class matching when user changed the value of an input</a> <span>(w3c/csswg-drafts#1533)</span></td>
+        </tr>
+        <tr>
+          <td class="total">74</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1373">[css-grid-2] Ability for grid items to automatically span rows and columns based on content size</a> <span>(w3c/csswg-drafts#1373)</span></td>
+        </tr>
+        <tr>
+          <td class="total">118</td>
+          <td class="recent">5</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1332">[css-images] Add easing functions to color stops</a> <span>(w3c/csswg-drafts#1332)</span></td>
+        </tr>
+        <tr>
+          <td class="total">113</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1293">[css-overflow] Positioning Scrollbars on top or left of container</a> <span>(w3c/csswg-drafts#1293)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1282">[css-logical] Flow-relative syntax for &#x60;margin&#x60;-like shorthands</a> <span>(w3c/csswg-drafts#1282)</span></td>
+        </tr>
+        <tr>
+          <td class="total">32</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1173">[css-grid] aspect ratio units needed</a> <span>(w3c/csswg-drafts#1173)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1102">[css-grid-2] Allow minmax where max wins over min</a> <span>(w3c/csswg-drafts#1102)</span></td>
+        </tr>
+        <tr>
+          <td class="total">70</td>
+          <td class="recent">5</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1026">[css-values] enable the use of counter() inside calc()</a> <span>(w3c/csswg-drafts#1026)</span></td>
+        </tr>
+        <tr>
+          <td class="total">18</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/1010">CSS Regex Selector</a> <span>(w3c/csswg-drafts#1010)</span></td>
+        </tr>
+        <tr>
+          <td class="total">78</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/945">[css-grid][css-flexbox] Pinterest/Masonry style layout support</a> <span>(w3c/csswg-drafts#945)</span></td>
+        </tr>
+        <tr>
+          <td class="total">294</td>
+          <td class="recent">8</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/865">[css3 positioning] support position:sticky inside an overflow:hidden|auto on general parents</a> <span>(w3c/csswg-drafts#865)</span></td>
+        </tr>
+        <tr>
+          <td class="total">25</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/820">[css-sizing] Adding a &#x27;size&#x27; shorthand for &#x27;width&#x27;/&#x27;height&#x27;</a> <span>(w3c/csswg-drafts#820)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/809">[cssom-view] window.innerScreenX windows.innerScreenY</a> <span>(w3c/csswg-drafts#809)</span></td>
+        </tr>
+        <tr>
+          <td class="total">16</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/796">[css-grid] Auto-placement aligning to a named line</a> <span>(w3c/csswg-drafts#796)</span></td>
+        </tr>
+        <tr>
+          <td class="total">446</td>
+          <td class="recent">8</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/626">[css-transitions] Transition to height (or width) &quot;auto&quot;</a> <span>(w3c/csswg-drafts#626)</span></td>
+        </tr>
+        <tr>
+          <td class="total">36</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/616">[css-text-4] Hyphenate only overflowing words?</a> <span>(w3c/csswg-drafts#616)</span></td>
+        </tr>
+        <tr>
+          <td class="total">14</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/542">[css-values] String concatentation</a> <span>(w3c/csswg-drafts#542)</span></td>
+        </tr>
+        <tr>
+          <td class="total">26</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/499">[css-grid] Decorative grid-cell pseudo-elements</a> <span>(w3c/csswg-drafts#499)</span></td>
+        </tr>
+        <tr>
+          <td class="total">40</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/333">[css-grid][css-sizing] Aspect Ratio</a> <span>(w3c/csswg-drafts#333)</span></td>
+        </tr>
+        <tr>
+          <td class="total">43</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/280">[css-timing] spring() timing function</a> <span>(w3c/csswg-drafts#280)</span></td>
+        </tr>
+        <tr>
+          <td class="total">89</td>
+          <td class="recent">6</td>
+          <td class="title"><a href="https://github.com/w3c/csswg-drafts/issues/156">CSS Snap Points: Event Model Missing</a> <span>(w3c/csswg-drafts#156)</span></td>
+        </tr>
+        <tr>
+          <td class="total">192</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/fxtf-drafts/issues/7">Proposal: Promote SVG Viewbox to a CSS property, extend to all transformable elements</a> <span>(w3c/fxtf-drafts#7)</span></td>
+        </tr>
+        <tr>
+          <td class="total">26</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/gamepad/issues/19">Vibrate feature for Gamepad</a> <span>(w3c/gamepad#19)</span></td>
+        </tr>
+        <tr>
+          <td class="total">26</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/w3c/largest-contentful-paint/issues/71">Refine LCP to take progressive loading into account</a> <span>(w3c/largest-contentful-paint#71)</span></td>
+        </tr>
+        <tr>
+          <td class="total">75</td>
+          <td class="recent">14</td>
+          <td class="title"><a href="https://github.com/w3c/manifest/issues/975">Add support for defining a theme color for both light &amp; dark modes (prefers color scheme)</a> <span>(w3c/manifest#975)</span></td>
+        </tr>
+        <tr>
+          <td class="total">39</td>
+          <td class="recent">5</td>
+          <td class="title"><a href="https://github.com/w3c/manifest/issues/737">Add a &quot;tabbed application&quot; mode</a> <span>(w3c/manifest#737)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/manifest/issues/676">Add optional &#x60;translations&#x60; member</a> <span>(w3c/manifest#676)</span></td>
+        </tr>
+        <tr>
+          <td class="total">31</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/manifest/issues/626">Add a means to associate a PWA with a file extension</a> <span>(w3c/manifest#626)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/media-source/issues/55">Please support for audio/wav (PCM) in MSE</a> <span>(w3c/media-source#55)</span></td>
+        </tr>
+        <tr>
+          <td class="total">22</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/picture-in-picture/issues/113">Picture-in-Picture for any Element</a> <span>(w3c/picture-in-picture#113)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/pointerevents/issues/358">touch-action: disable webview swipe back behavior</a> <span>(w3c/pointerevents#358)</span></td>
+        </tr>
+        <tr>
+          <td class="total">32</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/requestidlecallback/issues/68">Priority Queue Option</a> <span>(w3c/requestidlecallback#68)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/resource-timing/issues/102">Expose a way to link a call to fetch to an individual PerformanceResourceTiming object </a> <span>(w3c/resource-timing#102)</span></td>
+        </tr>
+        <tr>
+          <td class="total">21</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/resource-timing/issues/90">Add response status codes for resources in Resource Timing API.</a> <span>(w3c/resource-timing#90)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/screen-wake-lock/issues/129">Need maximum screen brightness mode</a> <span>(w3c/screen-wake-lock#129)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/svgwg/issues/785">Add a way to create conic gradients</a> <span>(w3c/svgwg#785)</span></td>
+        </tr>
+        <tr>
+          <td class="total">27</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/svgwg/issues/707">Referencing SVGs through USE from other domains</a> <span>(w3c/svgwg#707)</span></td>
+        </tr>
+        <tr>
+          <td class="total">56</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/w3c/svgwg/issues/332">Add &#x60;contenteditable&#x60; attribute for SVG text elements</a> <span>(w3c/svgwg#332)</span></td>
+        </tr>
+        <tr>
+          <td class="total">16</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/svgwg/issues/177">Allow stroke-dasharray/dashoffset % to be specified relative to path length</a> <span>(w3c/svgwg#177)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/trusted-types/issues/342">CfC to publish as an FPWD.</a> <span>(w3c/trusted-types#342)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/uievents/issues/202">Event order between &quot;compositionend&quot; and &quot;input&quot;</a> <span>(w3c/uievents#202)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/webappsec-change-password-url/issues/4">Add informative text clarifying that servers may use complex logic to determine where to redirect to</a> <span>(w3c/webappsec-change-password-url#4)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/webappsec-csp/issues/399">Support &#x27;strict-dynamic&#x27; in style-src</a> <span>(w3c/webappsec-csp#399)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/webappsec-csp/issues/92">WebRTC can be used for exfiltration</a> <span>(w3c/webappsec-csp#92)</span></td>
+        </tr>
+        <tr>
+          <td class="total">39</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/webappsec-permissions-policy/issues/208">How do I disable everything?</a> <span>(w3c/webappsec-permissions-policy#208)</span></td>
+        </tr>
+        <tr>
+          <td class="total">256</td>
+          <td class="recent">12</td>
+          <td class="title"><a href="https://github.com/w3c/webappsec-permissions-policy/issues/189">Proposal: define default for all</a> <span>(w3c/webappsec-permissions-policy#189)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/webappsec-subresource-integrity/issues/68">integrity for downloads</a> <span>(w3c/webappsec-subresource-integrity#68)</span></td>
+        </tr>
+        <tr>
+          <td class="total">47</td>
+          <td class="recent">10</td>
+          <td class="title"><a href="https://github.com/w3c/webauthn/issues/1255">Add a way to use webauthn without Javascript</a> <span>(w3c/webauthn#1255)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/webcodecs/issues/383">Can we drop the secure context (https) requirement?</a> <span>(w3c/webcodecs#383)</span></td>
+        </tr>
+        <tr>
+          <td class="total">20</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/w3c/webcrypto/issues/263">PROPOSAL: Add support for general (hardware backed) cryptographic signatures and key exchange</a> <span>(w3c/webcrypto#263)</span></td>
+        </tr>
+        <tr>
+          <td class="total">20</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/webcrypto/issues/223">Please add support for chacha20-poly1305</a> <span>(w3c/webcrypto#223)</span></td>
+        </tr>
+        <tr>
+          <td class="total">22</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/webcrypto/issues/196">Selected ECC curves are not secure</a> <span>(w3c/webcrypto#196)</span></td>
+        </tr>
+        <tr>
+          <td class="total">91</td>
+          <td class="recent">4</td>
+          <td class="title"><a href="https://github.com/w3c/webcrypto/issues/73">Bug 27755 - Using the Subtle Crypto Interface with Streams</a> <span>(w3c/webcrypto#73)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/webdriver/issues/1583">Capability to disable CORS checks [for given domains]</a> <span>(w3c/webdriver#1583)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/webdriver/issues/1355">Add command for file uploads (separate out from Element Send Keys)</a> <span>(w3c/webdriver#1355)</span></td>
+        </tr>
+        <tr>
+          <td class="total">104</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/webdriver/issues/1238">Allow Add Cookie and Get All Cookies to work for other site origins/mismatching domains</a> <span>(w3c/webdriver#1238)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/webdriver/issues/1234">URL blocking / ad blocking</a> <span>(w3c/webdriver#1234)</span></td>
+        </tr>
+        <tr>
+          <td class="total">21</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/w3c/webdriver/issues/1005">Missing &quot;scroll into view&quot; Actions primitive</a> <span>(w3c/webdriver#1005)</span></td>
+        </tr>
+        <tr>
+          <td class="total">57</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/w3c/webdriver/issues/385">Missing support for HTTP authentication prompts</a> <span>(w3c/webdriver#385)</span></td>
+        </tr>
+        <tr>
+          <td class="total">37</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/whatwg/console/issues/163">Extending the console to improve developer experience</a> <span>(whatwg/console#163)</span></td>
+        </tr>
+        <tr>
+          <td class="total">88</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/903">Proposal - Update XPath to (at least) v2.0</a> <span>(whatwg/dom#903)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/891">Proposal: New method to reorder child nodes</a> <span>(whatwg/dom#891)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/863">Add more explanation for Event concepts</a> <span>(whatwg/dom#863)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/837">Proposal: A Range.prototype.replaceContents(...)</a> <span>(whatwg/dom#837)</span></td>
+        </tr>
+        <tr>
+          <td class="total">147</td>
+          <td class="recent">7</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/831">Declarative Shadow DOM</a> <span>(whatwg/dom#831)</span></td>
+        </tr>
+        <tr>
+          <td class="total">54</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/736">Proposal: a DocumentFragment whose nodes do not get removed once inserted</a> <span>(whatwg/dom#736)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/583">Allow custom &quot;get the parent&quot; algorithms for EventTargets</a> <span>(whatwg/dom#583)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/546">Proposal: Element.elementIndex, Node.nodeIndex</a> <span>(whatwg/dom#546)</span></td>
+        </tr>
+        <tr>
+          <td class="total">596</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/544">Improving ergonomics of events with Observable</a> <span>(whatwg/dom#544)</span></td>
+        </tr>
+        <tr>
+          <td class="total">22</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/533">Make it possible to observe connected-ness of a node</a> <span>(whatwg/dom#533)</span></td>
+        </tr>
+        <tr>
+          <td class="total">40</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/412">[Proposal] Add EventTarget.getEventListeners()</a> <span>(whatwg/dom#412)</span></td>
+        </tr>
+        <tr>
+          <td class="total">19</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/331">Symbols should be allowed as Event types.</a> <span>(whatwg/dom#331)</span></td>
+        </tr>
+        <tr>
+          <td class="total">96</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/270">Proposal: DOMChangeList</a> <span>(whatwg/dom#270)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/150">Proposal to improve the DOM creation api</a> <span>(whatwg/dom#150)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/dom/issues/126">Disconnect single target instead of all</a> <span>(whatwg/dom#126)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/whatwg/fetch/issues/1254">Fetch body streams are not full duplex</a> <span>(whatwg/fetch#1254)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">7</td>
+          <td class="title"><a href="https://github.com/whatwg/fetch/issues/981">Trailer support in the API</a> <span>(whatwg/fetch#981)</span></td>
+        </tr>
+        <tr>
+          <td class="total">19</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/fetch/issues/973">Use case for Headers getAll</a> <span>(whatwg/fetch#973)</span></td>
+        </tr>
+        <tr>
+          <td class="total">37</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/fetch/issues/878">Proposal: Allow servers to take full responsibility for cross-origin access protection</a> <span>(whatwg/fetch#878)</span></td>
+        </tr>
+        <tr>
+          <td class="total">46</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/fetch/issues/607">FetchObserver (for a single fetch)</a> <span>(whatwg/fetch#607)</span></td>
+        </tr>
+        <tr>
+          <td class="total">43</td>
+          <td class="recent">4</td>
+          <td class="title"><a href="https://github.com/whatwg/fetch/issues/601">Header to opt out of opaque redirect</a> <span>(whatwg/fetch#601)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/fetch/issues/526">More informative error types</a> <span>(whatwg/fetch#526)</span></td>
+        </tr>
+        <tr>
+          <td class="total">18</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/fetch/pull/465">Block subresource requests whose URLs include credentials.</a> <span>(whatwg/fetch#465)</span></td>
+        </tr>
+        <tr>
+          <td class="total">26</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/fetch/issues/180">Add option to automatically abort response stream if the data stopped arriving for longer than a specified time</a> <span>(whatwg/fetch#180)</span></td>
+        </tr>
+        <tr>
+          <td class="total">23</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/fetch/issues/179">Add option to reject the fetch promise automatically after a certain time elapsed (with no API for arbitrary aborts)</a> <span>(whatwg/fetch#179)</span></td>
+        </tr>
+        <tr>
+          <td class="total">61</td>
+          <td class="recent">61</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/8358">Proposal: showEmojiPicker() on HTMLInputElement/HTMLTextareaElement</a> <span>(whatwg/html#8358)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/whatwg/html/pull/8008">Add sizes&#x3D;auto to lazy-loaded &lt;img&gt;</a> <span>(whatwg/html#8008)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/7946">Proposal: Allow authors to enforce &quot;save as PDF&quot; when printing a document</a> <span>(whatwg/html#7946)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/pull/7320">Add the &lt;search&gt; element</a> <span>(whatwg/html#7320)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/7293">&lt;input type&#x3D;password&gt; should provide UI to show/hide its value</a> <span>(whatwg/html#7293)</span></td>
+        </tr>
+        <tr>
+          <td class="total">21</td>
+          <td class="recent">7</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/7141">Require &#x60;img&#x60; to be able to load the same video formats as &#x60;video&#x60; supports</a> <span>(whatwg/html#7141)</span></td>
+        </tr>
+        <tr>
+          <td class="total">36</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/7039">Proposal for Element.currentLang and Element.currentDir</a> <span>(whatwg/html#7039)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">4</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/6733">Support &#x60;&lt;optgroup&gt;&#x60; in &#x60;&lt;datalist&gt;&#x60;</a> <span>(whatwg/html#6733)</span></td>
+        </tr>
+        <tr>
+          <td class="total">32</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/6698">Allow HTML web apps to force 24 hour time format in &lt;input type&#x3D;time&gt;</a> <span>(whatwg/html#6698)</span></td>
+        </tr>
+        <tr>
+          <td class="total">30</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/6633">Allow &lt;source&gt; to use &lt;img&gt;&#x27;s sizes data as a fallback</a> <span>(whatwg/html#6633)</span></td>
+        </tr>
+        <tr>
+          <td class="total">21</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/6363">HTML Video Element: Proposal For Reintroduction of Media (and srcset/sizes) in Source Elements</a> <span>(whatwg/html#6363)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/6116">Feature request: to complement a &lt;noscript&gt; a &lt;yesscript&gt; to assist progressive enhancement</a> <span>(whatwg/html#6116)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/5811">Consider creating an HTML search element</a> <span>(whatwg/html#5811)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/5782">Custom Elements Built-in Style-ability</a> <span>(whatwg/html#5782)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/5744">Add an API to opt-out of back-forward cache?</a> <span>(whatwg/html#5744)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/5426">Pages with &#x60;color-scheme: dark&#x60; have too low link color contrast</a> <span>(whatwg/html#5426)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/5421">Proposal: &#x60;strong&#x60; attribute for &lt;input type&#x3D;password&gt;</a> <span>(whatwg/html#5421)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/5326">Programmatically setting focus navigation start point?</a> <span>(whatwg/html#5326)</span></td>
+        </tr>
+        <tr>
+          <td class="total">139</td>
+          <td class="recent">6</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/5312">Form Submission: Fix the &quot;Double Submit problem&quot; at the spec level</a> <span>(whatwg/html#5312)</span></td>
+        </tr>
+        <tr>
+          <td class="total">16</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/5025">Allow animations to be given a target framerate</a> <span>(whatwg/html#5025)</span></td>
+        </tr>
+        <tr>
+          <td class="total">35</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/4986">autocomplete attribute for street-address details</a> <span>(whatwg/html#4986)</span></td>
+        </tr>
+        <tr>
+          <td class="total">103</td>
+          <td class="recent">8</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/4923">add attribute  max-size to input type file</a> <span>(whatwg/html#4923)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/4818">Proposition: replace default invalid state for form elements by indeterminate</a> <span>(whatwg/html#4818)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/4785">[Proposal] ImageBitmap.getImageData</a> <span>(whatwg/html#4785)</span></td>
+        </tr>
+        <tr>
+          <td class="total">16</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/4654">Add &quot;auto sizes&quot; for lazy-loaded images</a> <span>(whatwg/html#4654)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/4633">Top layer research</a> <span>(whatwg/html#4633)</span></td>
+        </tr>
+        <tr>
+          <td class="total">14</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/4623">Something like the hidden attribute but still mapped to the accessibility API</a> <span>(whatwg/html#4623)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/4607">Focus meta-bug</a> <span>(whatwg/html#4607)</span></td>
+        </tr>
+        <tr>
+          <td class="total">13</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/4537">Proposal: Native solution for tooltips on the web platform</a> <span>(whatwg/html#4537)</span></td>
+        </tr>
+        <tr>
+          <td class="total">16</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/4508">Reinstate &lt;style scoped&gt;</a> <span>(whatwg/html#4508)</span></td>
+        </tr>
+        <tr>
+          <td class="total">133</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/4432">Add first-class support for differential script loading</a> <span>(whatwg/html#4432)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/4421">Responsive images causes performance issues on high-resolution devices</a> <span>(whatwg/html#4421)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/pull/4184">Focus the dialog element instead of the first focusable item</a> <span>(whatwg/html#4184)</span></td>
+        </tr>
+        <tr>
+          <td class="total">25</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/4180">Requesting &lt;input type&#x3D;&quot;switch&quot;&gt;</a> <span>(whatwg/html#4180)</span></td>
+        </tr>
+        <tr>
+          <td class="total">22</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/3754">HTML video element: negative playbackRate</a> <span>(whatwg/html#3754)</span></td>
+        </tr>
+        <tr>
+          <td class="total">34</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/3596">Allow adding icons/images to &lt;select&gt; and &lt;datalist&gt; &lt;option&gt;s</a> <span>(whatwg/html#3596)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/3595">Add autocorrect content attribute to HTMLElement</a> <span>(whatwg/html#3595)</span></td>
+        </tr>
+        <tr>
+          <td class="total">15</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/3577">HTML forms do not support the PUT, PATCH and DELETE methods</a> <span>(whatwg/html#3577)</span></td>
+        </tr>
+        <tr>
+          <td class="total">18</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/3571">OpenType Features and Variable Fonts for Canvas</a> <span>(whatwg/html#3571)</span></td>
+        </tr>
+        <tr>
+          <td class="total">55</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/3567">Have some way of opening &#x60;&lt;dialog&gt;&#x60; elements without JavaScript</a> <span>(whatwg/html#3567)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/3539">Potentially standardize window.find()</a> <span>(whatwg/html#3539)</span></td>
+        </tr>
+        <tr>
+          <td class="total">46</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/3518">Proposal: HTML passwordrules attribute</a> <span>(whatwg/html#3518)</span></td>
+        </tr>
+        <tr>
+          <td class="total">28</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/3400">Allow &lt;input type&#x3D;&quot;color&quot;&gt; to give an alpha channel and/or colors beyond sRGB?</a> <span>(whatwg/html#3400)</span></td>
+        </tr>
+        <tr>
+          <td class="total">28</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/3338">Proposal: Storage Access API</a> <span>(whatwg/html#3338)</span></td>
+        </tr>
+        <tr>
+          <td class="total">48</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/3281">Consider adding &lt;input type&#x3D;&quot;year&quot;&gt;</a> <span>(whatwg/html#3281)</span></td>
+        </tr>
+        <tr>
+          <td class="total">23</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/3269">Make FileList mutable.</a> <span>(whatwg/html#3269)</span></td>
+        </tr>
+        <tr>
+          <td class="total">23</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/2973">Add height-based selection to srcset/sizes</a> <span>(whatwg/html#2973)</span></td>
+        </tr>
+        <tr>
+          <td class="total">18</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/2894">Deprecate alert(), confirm(), prompt()</a> <span>(whatwg/html#2894)</span></td>
+        </tr>
+        <tr>
+          <td class="total">94</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/2791">Client side include feature for HTML</a> <span>(whatwg/html#2791)</span></td>
+        </tr>
+        <tr>
+          <td class="total">45</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/2722">Attribute to suggest filename for image elements (&lt;img filename&gt; / &lt;img download&gt;)</a> <span>(whatwg/html#2722)</span></td>
+        </tr>
+        <tr>
+          <td class="total">14</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/2311">Provide a way to have disabled form controls to be submitted (was: readonly attribute)</a> <span>(whatwg/html#2311)</span></td>
+        </tr>
+        <tr>
+          <td class="total">74</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/2271">Make custom attribute rules consistent with custom element name rules</a> <span>(whatwg/html#2271)</span></td>
+        </tr>
+        <tr>
+          <td class="total">36</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/2254">Standardize &lt;template&gt; variables and event handlers</a> <span>(whatwg/html#2254)</span></td>
+        </tr>
+        <tr>
+          <td class="total">73</td>
+          <td class="recent">7</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/2177">Setting headers for EventSource</a> <span>(whatwg/html#2177)</span></td>
+        </tr>
+        <tr>
+          <td class="total">27</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/2142">A way to stream content into an element</a> <span>(whatwg/html#2142)</span></td>
+        </tr>
+        <tr>
+          <td class="total">47</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/pull/1936">Add document.{parsed,contentLoaded,loaded} promises</a> <span>(whatwg/html#1936)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/1921">No video.removeTextTrack method</a> <span>(whatwg/html#1921)</span></td>
+        </tr>
+        <tr>
+          <td class="total">17</td>
+          <td class="recent">3</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/1809">[Proposal] New tags &lt;tabsection&gt;, &lt;tablist&gt;, &lt;tab&gt;, &lt;tabpanel&gt;</a> <span>(whatwg/html#1809)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/1766">Add onclose event to MessagePort</a> <span>(whatwg/html#1766)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/1632">Make &lt;label&gt; elements reflect CSS pseudoclasses on associated form element</a> <span>(whatwg/html#1632)</span></td>
+        </tr>
+        <tr>
+          <td class="total">36</td>
+          <td class="recent">2</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/897">Expose a stack of blocking elements</a> <span>(whatwg/html#897)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/617">A setTimeout that returns a promise that resolves after specified time.</a> <span>(whatwg/html#617)</span></td>
+        </tr>
+        <tr>
+          <td class="total">18</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/555">Allow auto-resize on iframe</a> <span>(whatwg/html#555)</span></td>
+        </tr>
+        <tr>
+          <td class="total">22</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/330">Expose API for the progress indicator</a> <span>(whatwg/html#330)</span></td>
+        </tr>
+        <tr>
+          <td class="total">20</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/html/issues/127">Add &#x60;document.ready&#x60; promise</a> <span>(whatwg/html#127)</span></td>
+        </tr>
+        <tr>
+          <td class="total">12</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/notifications/issues/108">Require user gesture for notification permission request</a> <span>(whatwg/notifications#108)</span></td>
+        </tr>
+        <tr>
+          <td class="total">31</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/storage/issues/11">Allow all storage types to expire, not just cookies</a> <span>(whatwg/storage#11)</span></td>
+        </tr>
+        <tr>
+          <td class="total">10</td>
+          <td class="recent">1</td>
+          <td class="title"><a href="https://github.com/whatwg/streams/issues/1019">ReadableStream.prototype.arrayBuffer()</a> <span>(whatwg/streams#1019)</span></td>
+        </tr>
+        <tr>
+          <td class="total">20</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/url/issues/568">Omitting www might be confusing for users</a> <span>(whatwg/url#568)</span></td>
+        </tr>
+        <tr>
+          <td class="total">28</td>
+          <td class="recent">4</td>
+          <td class="title"><a href="https://github.com/whatwg/url/issues/531">Support relative URLs</a> <span>(whatwg/url#531)</span></td>
+        </tr>
+        <tr>
+          <td class="total">11</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/url/issues/528">Feature proposal: eTLD+1 web API</a> <span>(whatwg/url#528)</span></td>
+        </tr>
+        <tr>
+          <td class="total">45</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/url/issues/491">Introduce a variant of url.searchParams that operates according to URL rules instead of &lt;form&gt; rules</a> <span>(whatwg/url#491)</span></td>
+        </tr>
+        <tr>
+          <td class="total">19</td>
+          <td class="recent">0</td>
+          <td class="title"><a href="https://github.com/whatwg/url/issues/421">URL.relative proposal</a> <span>(whatwg/url#421)</span></td>
+        </tr>
+        <tr>
+          <td class="total">63</td>
+          <td class="recent">9</td>
+          <td class="title"><a href="https://github.com/whatwg/url/issues/335">URLSearchParams delete all vs delete one</a> <span>(whatwg/url#335)</span></td>
+        </tr>
+        <tr>
+          <td class="total">143</td>
+          <td class="recent">16</td>
+          <td class="title"><a href="https://github.com/whatwg/websockets/issues/16">Support for custom headers for handshake </a> <span>(whatwg/websockets#16)</span></td>
+        </tr>
     </tbody>
   </table>
 </div>
