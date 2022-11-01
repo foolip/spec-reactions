@@ -1,8 +1,9 @@
 import handlebars from 'vite-plugin-handlebars';
 
-import issues from './issues.json' assert { type: "json" };
+import issues from './issues.json' assert { type: 'json' };
 
 export default {
+  base: './',
   plugins: [
     handlebars({
       context: {
