@@ -8,6 +8,7 @@ export default {
     handlebars({
       context: {
         issues,
+        updated: new Date().toISOString().split('T')[0],
       },
       helpers: {
         pretty: (url) => {

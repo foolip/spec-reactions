@@ -1,6 +1,57 @@
 @import "open-props/style";
 @import "open-props/normalize";
 
+header, main, footer {
+  padding: var(--size-fluid-1);
+}
+
+header, footer {
+  background: var(--yellow-5);
+}
+
+header *, footer {
+  color: var(--gray-9) !important;
+}
+
+header a {
+  font-weight: bold;
+  text-decoration-color: var(--gray-9);
+}
+
+main {
+  border: 1px solid var(--gray-9);
+  border-width: 1px 0;
+}
+
+th {
+  text-align: left;
+}
+
+button, input {
+  height: 2em;
+}
+
+button.asc::after {
+  content: ' ▲';
+}
+
+button.desc::after {
+  content: ' ▼';
+}
+
+input {
+  width: 100%;
+  font-weight: normal;
+}
+
+td {
+  padding-left: var(--size-fluid-1);
+}
+
 td.total, td.recent {
   text-align: right;
+}
+
+footer {
+  text-align: center;
 }
