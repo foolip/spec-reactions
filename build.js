@@ -104,7 +104,6 @@ async function main() {
         // Log the issue URL to make it easier to see if the script is stuck.
         console.log(info.url);
         issues.push(info);
-        if (issues.length == 10)break;
       }
     }
   }
