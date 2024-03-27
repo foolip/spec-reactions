@@ -48,17 +48,16 @@ async function main() {
   const octokit = new ThrottlingOctokit({
     auth: process.env.GITHUB_TOKEN,
     throttle: {
-      onRateLimit: (retryAfter, options) => {
-        console.log('');
-        if (options.request.retryCount <= 2) {
-          console.warn(`Rate limiting triggered, retrying after ${retryAfter} seconds!`);
+      onRateLimit: (retryAfter, options, octokit, retryCount) => {
+        octokit.log.warn(`Rate limit hit for request ${options.method} ${options.url}`);
+
+        if (retryCount < 3) {
+          octokit.log.info(`Retrying after ${retryAfter} seconds`);
           return true;
-        } else {
-          console.error(`Rate limiting triggered, not retrying again!`);
         }
       },
-      onAbuseLimit: () => {
-        console.error('Abuse limit triggered, not retrying!');
+      onSecondaryRateLimit: (retryAfter, options, octokit) => {
+        octokit.log.warn(`Secondary rate limit hit for request ${options.method} ${options.url}`);
       },
     },
   });
