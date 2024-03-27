@@ -65,7 +65,7 @@ async function main() {
 
   const repos = new Set();
   for (const spec of specs) {
-    const repo = spec.nightly.repository;
+    const repo = spec.nightly?.repository;
     if (repo) {
       repos.add(repo);
     }
