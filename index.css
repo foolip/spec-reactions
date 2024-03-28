@@ -5,11 +5,19 @@ table {
   width: 100%;
 }
 
-header, main, footer {
+body {
   padding: var(--size-fluid-1);
 }
 
+header, main {
+  /* gaps between header+main+footer */
+  margin-bottom: var(--size-fluid-1);
+}
+
 header, footer {
+  padding: var(--size-fluid-1);
+  /* same radius as table */
+  border-radius: var(--radius-3);
   background: var(--yellow-5);
 }
 
@@ -20,11 +28,6 @@ header *, footer {
 header a {
   font-weight: bold;
   text-decoration-color: var(--gray-9);
-}
-
-main {
-  border: 1px solid var(--gray-9);
-  border-width: 1px 0;
 }
 
 th.total, th.recent {
