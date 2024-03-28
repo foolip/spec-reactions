@@ -1,6 +1,10 @@
 @import "open-props/style";
 @import "open-props/normalize";
 
+table {
+  width: 100%;
+}
+
 header, main, footer {
   padding: var(--size-fluid-1);
 }
@@ -23,12 +27,20 @@ main {
   border-width: 1px 0;
 }
 
-th {
+th.total, th.recent {
+  width: 9ch;
+}
+
+th, td.title {
   text-align: left;
 }
 
 button, input {
   height: 2em;
+}
+
+button {
+  width: 100%;
 }
 
 button.asc::after {
