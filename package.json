@@ -12,7 +12,7 @@
     "build": "node build.js && vite build"
   },
   "dependencies": {
-    "@octokit/plugin-throttling": "9.0.3",
+    "@octokit/plugin-throttling": "9.3.0",
     "@octokit/rest": "20.0.2",
     "browser-specs": "4.7.0",
     "handlebars": "4.7.8",
