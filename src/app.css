@@ -15,6 +15,9 @@
 
 table {
   width: 100%;
+  /* Column widths come from the header, so long titles wrap instead of
+     making the table wider than the screen. */
+  table-layout: fixed;
 }
 
 body {
@@ -50,6 +53,11 @@ th, td.title {
   text-align: left;
 }
 
+td.title {
+  max-inline-size: none;
+  overflow-wrap: anywhere;
+}
+
 button, input {
   height: 2em;
 }
@@ -82,8 +90,77 @@ td {
 
 td.count {
   text-align: right;
+  font-variant-numeric: tabular-nums;
+  /* A bar behind the number, relative to the largest in the column. */
+  background-image: linear-gradient(to left,
+    color-mix(in srgb, var(--yellow-5) 40%, transparent) var(--pct),
+    transparent var(--pct));
 }
 
-footer {
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+td.empty {
   text-align: center;
+  padding: var(--size-5);
+  color: var(--text-2);
+}
+
+.name {
+  color: var(--text-2);
+}
+
+.repos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-2);
+}
+
+.chip, .clear {
+  width: auto;
+  height: auto;
+  padding: var(--size-1) var(--size-3);
+  border: var(--border-size-1) solid var(--surface-4);
+  border-radius: var(--radius-round);
+  background: var(--surface-1);
+  color: var(--text-1);
+  font-size: var(--font-size-0);
+}
+
+.chip:enabled:hover, .clear:hover {
+  background: var(--surface-3);
+}
+
+.chip[aria-pressed="true"] {
+  border-color: var(--yellow-6);
+  background: var(--yellow-5);
+  color: var(--gray-9);
+}
+
+.more {
+  border-style: dashed;
+}
+
+.chip-count {
+  color: var(--text-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.chip[aria-pressed="true"] .more {
+  border-style: dashed;
+}
+
+.chip-count {
+  color: inherit;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: var(--size-3);
+  margin-block: var(--size-3);
+  color: var(--text-2);
 }
