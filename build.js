@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import specs from 'browser-specs' assert { type: "json" };
+import specs from 'web-specs' with { type: "json" };
 import {Octokit} from '@octokit/rest';
 import {throttling} from '@octokit/plugin-throttling';
 
@@ -64,9 +64,12 @@ async function main() {
 
   const repos = new Set();
   for (const spec of specs) {
-    const repo = spec.nightly?.repository;
-    if (repo) {
-      repos.add(repo);
+    if (spec.categories?.includes('browser') &&
+        spec.standing === 'good') {
+      const repo = spec.nightly?.repository;
+      if (repo) {
+        repos.add(repo);
+      }
     }
   }
 
