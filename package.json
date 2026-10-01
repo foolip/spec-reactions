@@ -9,16 +9,20 @@
   },
   "type": "module",
   "scripts": {
-    "build": "node build.js && vite build"
+    "fetch": "node build.js",
+    "build": "node build.js && vite build",
+    "dev": "vite dev",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@octokit/plugin-throttling": "11.0.5",
     "@octokit/rest": "22.0.1",
-    "handlebars": "4.7.9",
-    "list.js": "2.3.1",
+    "@sveltejs/adapter-static": "4.0.0",
+    "@sveltejs/kit": "3.0.0",
+    "@sveltejs/vite-plugin-svelte": "7.3.1",
     "open-props": "1.7.23",
+    "svelte": "5.57.1",
     "vite": "8.3.1",
-    "vite-plugin-handlebars": "2.0.3",
     "web-specs": "4.16.0"
   }
 }

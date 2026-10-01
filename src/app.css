@@ -1,4 +1,16 @@
-@import "open-props/style";
+/* Only the open-props used by normalize and this file. */
+@import "open-props/borders";
+@import "open-props/easings";
+@import "open-props/fonts";
+@import "open-props/shadows";
+@import "open-props/sizes";
+@import "open-props/blue";
+@import "open-props/gray";
+@import "open-props/green";
+@import "open-props/indigo";
+@import "open-props/purple";
+@import "open-props/red";
+@import "open-props/yellow";
 @import "open-props/normalize";
 
 table {
@@ -30,7 +42,7 @@ header a {
   text-decoration-color: var(--gray-9);
 }
 
-th.total, th.recent {
+th.count {
   width: 9ch;
 }
 
@@ -42,8 +54,13 @@ button, input {
   height: 2em;
 }
 
+button:disabled {
+  cursor: default;
+}
+
 button {
   width: 100%;
+  white-space: nowrap;
 }
 
 button.asc::after {
@@ -63,7 +80,7 @@ td {
   padding-left: var(--size-fluid-1);
 }
 
-td.total, td.recent {
+td.count {
   text-align: right;
 }
 
