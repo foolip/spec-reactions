@@ -1,12 +1,9 @@
-import adapter from '@sveltejs/adapter-static';
-import {sveltekit} from '@sveltejs/kit/vite';
+import {svelte} from '@sveltejs/vite-plugin-svelte';
 
 export default {
-  plugins: [
-    sveltekit({
-      adapter: adapter({pages: 'dist'}),
-      // Inline all CSS so that nothing blocks the first render.
-      inlineStyleThreshold: Infinity,
-    }),
-  ],
+  base: './',
+  plugins: [svelte()],
+  define: {
+    __UPDATED__: JSON.stringify(new Date().toISOString().split('T')[0]),
+  },
 };

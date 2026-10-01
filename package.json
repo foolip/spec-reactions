@@ -10,15 +10,14 @@
   "type": "module",
   "scripts": {
     "fetch": "node build.js",
-    "build": "node build.js && vite build",
-    "dev": "vite dev",
+    "build": "node build.js && node render.js",
+    "render": "node render.js",
+    "dev": "vite",
     "preview": "vite preview"
   },
   "dependencies": {
     "@octokit/plugin-throttling": "11.0.5",
     "@octokit/rest": "22.0.1",
-    "@sveltejs/adapter-static": "4.0.0",
-    "@sveltejs/kit": "3.0.0",
     "@sveltejs/vite-plugin-svelte": "7.3.1",
     "open-props": "1.7.23",
     "svelte": "5.57.1",

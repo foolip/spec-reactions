@@ -1,10 +1,11 @@
 <script>
-  import '../app.css';
+  import './app.css';
   import {onMount} from 'svelte';
-  import issues from '../../issues.json';
-  import {pretty} from '../lib/pretty.js';
+  import issues from '../issues.json';
+  import {pretty} from './pretty.js';
 
-  let {data} = $props();
+  // Injected at build time by vite.config.js.
+  const updated = __UPDATED__;
 
   const rows = issues.map((issue) => ({
     ...issue,
@@ -84,5 +85,5 @@
   </table>
 </main>
 <footer>
-  Last updated {data.updated}
+  Last updated {updated}
 </footer>
