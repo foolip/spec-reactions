@@ -2,22 +2,21 @@
 // and inline the CSS, so that the page renders fully without JS.
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import {build, createServer} from 'vite';
-import {render} from 'svelte/server';
+import {pathToFileURL} from 'node:url';
+import {build} from 'vite';
 
 const outDir = 'dist';
+const ssrOutDir = '.ssr';
 
 await build();
-
-const server = await createServer({
-  server: {middlewareMode: true},
-  appType: 'custom',
-  logLevel: 'error',
-  optimizeDeps: {noDiscovery: true},
+await build({
+  logLevel: 'warn',
+  build: {ssr: 'src/server.js', outDir: ssrOutDir},
 });
-const {default: App} = await server.ssrLoadModule('/src/App.svelte');
-const {body} = render(App);
-await server.close();
+
+const {default: renderBody} = await import(pathToFileURL(path.resolve(ssrOutDir, 'server.js')));
+const body = renderBody();
+await fs.rm(ssrOutDir, {recursive: true});
 
 const htmlPath = path.join(outDir, 'index.html');
 let html = await fs.readFile(htmlPath, 'utf-8');
