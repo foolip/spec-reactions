@@ -1,9 +1,17 @@
-@import "open-props/style";
+/* Only the open-props used by normalize and this file. */
+@import "open-props/borders";
+@import "open-props/easings";
+@import "open-props/fonts";
+@import "open-props/shadows";
+@import "open-props/sizes";
+@import "open-props/blue";
+@import "open-props/gray";
+@import "open-props/green";
+@import "open-props/indigo";
+@import "open-props/purple";
+@import "open-props/red";
+@import "open-props/yellow";
 @import "open-props/normalize";
-
-table {
-  width: 100%;
-}
 
 body {
   padding: var(--size-fluid-1);
@@ -28,43 +36,6 @@ header *, footer {
 header a {
   font-weight: bold;
   text-decoration-color: var(--gray-9);
-}
-
-th.total, th.recent {
-  width: 9ch;
-}
-
-th, td.title {
-  text-align: left;
-}
-
-button, input {
-  height: 2em;
-}
-
-button {
-  width: 100%;
-}
-
-button.asc::after {
-  content: ' ▲';
-}
-
-button.desc::after {
-  content: ' ▼';
-}
-
-input {
-  width: 100%;
-  font-weight: normal;
-}
-
-td {
-  padding-left: var(--size-fluid-1);
-}
-
-td.total, td.recent {
-  text-align: right;
 }
 
 footer {
