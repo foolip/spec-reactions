@@ -12,6 +12,7 @@ const RECENT_REACTION_DAYS = 90;
 // Additional repos to include that aren't in web-specs.
 const EXTRA_REPOS = [
   'https://github.com/WICG/webcomponents',
+  'https://github.com/openui/open-ui',
 ];
 
 async function* iterateIssues(octokit, owner, repo) {
