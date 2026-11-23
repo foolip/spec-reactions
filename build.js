@@ -9,6 +9,12 @@ const MIN_REACTION_COUNT = 10;
 // What to consider a recent reaction.
 const RECENT_REACTION_DAYS = 90;
 
+// Additional repos to include that aren't in web-specs.
+const EXTRA_REPOS = [
+  'https://github.com/WICG/webcomponents',
+  'https://github.com/openui/open-ui',
+];
+
 async function* iterateIssues(octokit, owner, repo) {
   for await (const response of octokit.paginate.iterator(
       octokit.rest.issues.listForRepo,
@@ -62,7 +68,7 @@ async function main() {
     },
   });
 
-  const repos = new Set();
+  const repos = new Set(EXTRA_REPOS);
   for (const spec of specs) {
     if (spec.categories?.includes('browser') &&
         spec.standing === 'good') {
